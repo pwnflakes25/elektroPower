@@ -1,0 +1,12 @@
+
+  <div class="carousel">
+      <a class="carousel-item" *ngFor="let item of testimonials; let i = index; trackBy: trackByFn;">
+        <div class="card">
+         <div class="card-content">
+            <i class="large material-icons">format_quote</i>
+           <p>{{item.message}}</p>
+           <p id="personName">{{item.name}}</p>
+         </div>
+         </div>
+      </a>
+    </div>

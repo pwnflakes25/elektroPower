@@ -1,0 +1,45 @@
+.carousel {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 35rem;
+}
+
+.carousel .card {
+  display: flex;
+  margin-top: -5rem;
+  flex-direction: column;
+  border-top-color: #232330;
+  border-top-style: solid;
+  border-top-width: 3px;
+  background-color: white;
+  color: #232330;
+}
+
+.card i {
+  color: #A7A7BE;
+  position: absolute;
+  opacity: 20%;
+  margin-top: -3rem;
+  right: 0px;
+}
+
+.carousel .card:before {
+  content: "";
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: red;
+  margin-top: -5rem;
+  text-align: center;
+  align-self: center;
+  background-image: url("https://randomuser.me/api/portraits/men/83.jpg");
+}
+
+.card-content p {
+  margin-top: 2rem;
+}
+
+.card #personName {
+  color: #A7A7BE;
+}

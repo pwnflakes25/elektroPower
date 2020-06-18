@@ -1,0 +1,209 @@
+
+/* general class below */
+.sectionContainer {
+  min-height: 700px;
+  padding: 2rem;
+  padding-top: 3rem;
+}
+
+.textBox {
+  width: 30em;
+}
+
+.bigHeading {
+  font-size: 72px;
+  color: white;
+  text-align: center;
+  display: block;
+  margin-bottom: -5rem;
+}
+
+.heading {
+  font-size: 48px;
+  height: auto;
+}
+
+.bigLabel {
+  text-align: center;
+  color: #A7A7BE;
+  font-size: 36px;
+  margin-bottom: 2rem;
+}
+
+.lightButton {
+	border-radius:16px;
+	border:3px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:17px;
+	padding:16px 31px;
+  letter-spacing: 2px;
+  transition-property: background-color, color;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+}
+.lightButton:hover {
+	background-color:white;
+  color: #232330;
+}
+.lightButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.darkButton {
+	border-radius:16px;
+	border:2px solid #232330;
+	display:inline-block;
+	cursor:pointer;
+	color:#232330;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size:17px;
+	padding:16px 31px;
+  letter-spacing: 2px;
+  transition-property: background-color, color;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+}
+.darkButton:hover {
+	background-color: #232330;
+  color: #ffffff;
+}
+.darkButton:active {
+	position:relative;
+	top:1px;
+}
+
+.buttonWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* first section =============================================================> */
+#firstSection {
+  background-color: blue;
+}
+
+#firstContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#firstSection .heading {
+  color: white;
+  text-align: center;
+}
+
+
+/* second section ================================================================>*/
+
+
+#featureSection {
+  padding: 4rem;
+}
+
+#featureSection .heading {
+  color: #232330;
+  display: inline-block;
+}
+
+#featureSection .darkButton {
+  float: right;
+}
+
+#featureSection .card {
+  box-shadow: none;
+  border-bottom-style: solid;
+  border-bottom-color: #232330;
+  border-bottom-width: 4px;
+}
+
+#cardContainer {
+  margin-top: 8rem;
+}
+
+/* call to action section =============================================================>*/
+#callToActionSection {
+  background: linear-gradient(118.86deg, #232A30 0%, #2A2330 83.48%);
+}
+
+
+#callToActionSection .container {
+ min-height: 700px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+
+#callToActionSection .heading {
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center;
+  align-self: center;
+}
+
+/* history section =================================================================> */
+
+#historySection {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0F0F4 100%);
+}
+
+#historySection .textContainer {
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+#imageDisplay1 {
+  display: block;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/49/DLR_engineer_working_on_a_free-piston_linear_generator.jpg");
+  background-size: cover;
+  background-position: -15rem;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 500px;
+  margin-top: -3rem;
+  margin-right: 2rem;
+}
+
+
+#imageDisplay2 {
+  display: block;
+  background-image: url("https://constructionreviewonline.com/wp-content/uploads/2020/03/6f171658877132d636341ae58e8b7d33.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -15rem;
+  width: 300px;
+  height: 500px;
+  margin-top: 10.25rem;
+  margin-bottom: -8rem;
+}
+
+/* testimonial section ========================================================> */
+
+#testimonialSection {
+  background-color: #F0F0F4;
+  display: flex;
+  flex-direction: column;
+}
+
+/* our partner section =========================================================>*/
+
+#partnerSection {
+  background: linear-gradient(180deg, #F0F0F4 0%, #FFFFFF 47.83%);
+}
