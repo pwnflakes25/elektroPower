@@ -1,7 +1,15 @@
 
 /* general class below */
+.parentContainer {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+
 .sectionContainer {
-  min-height: 700px;
+  scroll-snap-align: center;
+  min-height: calc(100vh + 2em);
   padding: 2rem;
   padding-top: 3rem;
 }
@@ -206,4 +214,10 @@
 
 #partnerSection {
   background: linear-gradient(180deg, #F0F0F4 0%, #FFFFFF 47.83%);
+  padding: 0px;
+  padding-top: 2rem;
+}
+
+#partnerSection .partnerImages {
+  height: 300px;
 }
