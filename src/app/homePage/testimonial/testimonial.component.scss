@@ -24,16 +24,14 @@
   right: 0px;
 }
 
-.carousel .card:before {
-  content: "";
+
+.personImage {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
-  background-color: red;
   margin-top: -5rem;
   text-align: center;
   align-self: center;
-  background-image: url("https://randomuser.me/api/portraits/men/83.jpg");
 }
 
 .card-content p {

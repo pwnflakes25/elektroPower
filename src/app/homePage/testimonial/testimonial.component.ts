@@ -10,14 +10,14 @@ export class TestimonialComponent implements OnInit {
 
 testimonials = [
   {
-    name: 'Mr Jojo',
+    name: 'Mr Firghi',
     message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
     imageUrl: 'https://randomuser.me/api/portraits/men/47.jpg'
   },
   {
     name: 'Mr Rabi',
     message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    imageUrl: 'https://randomuser.me/api/portraits/men/47.jpg'
+    imageUrl: 'https://randomuser.me/api/portraits/men/39.jpg'
   },
   {
     name: 'Ms Celine',

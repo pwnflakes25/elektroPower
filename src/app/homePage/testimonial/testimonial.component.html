@@ -2,6 +2,8 @@
   <div class="carousel">
       <a class="carousel-item" *ngFor="let item of testimonials; let i = index; trackBy: trackByFn;">
         <div class="card">
+          <div class="personImage" [style.background-image]="'url('+item.imageUrl+')'">
+          </div>
          <div class="card-content">
             <i class="large material-icons">format_quote</i>
            <p>{{item.message}}</p>
