@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {LayoutModule} from '@angular/cdk/layout';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatToolbarModule} from '@angular/material/toolbar';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +11,8 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 import { QuoteFormComponent } from './homePage/quote-form/quote-form.component';
+import { SolarComponent } from './packages/solar/solar.component';
+import { GeneratorComponent } from './packages/generator/generator.component';
 
 @NgModule({
   declarations: [
@@ -21,15 +21,16 @@ import { QuoteFormComponent } from './homePage/quote-form/quote-form.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    QuoteFormComponent
+    QuoteFormComponent,
+    SolarComponent,
+    GeneratorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
-    MatSidenavModule,
-    MatToolbarModule, ReactiveFormsModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,29 @@
+.container {
+  margin-top: 5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.ribbon {
+  content: " ";
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  align-self: center;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+}
+
+.bronze {
+  background-color: #cd7f32;
+}
+
+.silver {
+  background-color: #C0C0C0;
+}
+
+ .gold {
+  background-color: #D4AF37;
+}

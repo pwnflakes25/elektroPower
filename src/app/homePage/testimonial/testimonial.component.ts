@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-declare var $: any;
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+declare const M;
 
 @Component({
   selector: 'app-testimonial',
   templateUrl: './testimonial.component.html',
   styleUrls: ['./testimonial.component.scss']
 })
-export class TestimonialComponent implements OnInit {
+export class TestimonialComponent implements OnInit, AfterViewInit {
 
 testimonials = [
   {
@@ -29,10 +29,14 @@ testimonials = [
   constructor() { }
 
   ngOnInit(): void {
-    $(document).ready(() => {
-    $('.carousel').carousel();
-   });
   }
+
+  ngAfterViewInit(): void {
+    let elems = document.querySelectorAll('.carousel');
+    let instances = M.Carousel.init(elems);
+  }
+
+
 
   trackByFn(index, item) {
    return index;

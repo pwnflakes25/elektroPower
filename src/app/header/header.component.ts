@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
-declare var $: any;
+declare const M;
 
 @Component({
   selector: 'app-header',
@@ -15,9 +15,13 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    $(document).ready(function(){
-    $('.sidenav').sidenav();
-   });
+    const elems = document.querySelectorAll('.sidenav');
+    const dropDown = document.querySelectorAll('.dropdown-trigger');
+
+    const sideNavInstance = M.Sidenav.init(elems);
+    const dropDownInstance = M.Dropdown.init(dropDown);
+
+
   }
 
 }

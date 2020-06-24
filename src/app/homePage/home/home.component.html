@@ -1,24 +1,41 @@
 <div class="parentContainer">
+    <section class="carousel carousel-slider center sectionContainer" id="firstSection">
 
-  <section id="firstSection" class="sectionContainer">
-    <app-header id="navbar" [ngClass]="{'sticky': isScrolled}"></app-header>
-    <div class="container" id="firstContainer">
-      <div class="bigHeading">
-        <p>Elektro Power</p>
-      </div>
-      <div class="heading">
-        <p>Solar Panel Installation</p>
-      </div>
-      <div class="buttonWrapper">
-        <div class="lightButton" style="max-width: 50%;">Get Quote</div>
-      </div>
-    </div>
-  </section>
+      <div class="carousel-item" id="firstSlide">
+        <div class="textBox">
+          <div id="textTitle">
+            <h2 class="white-text bigHeading">Elektro Power</h2><br>
+          </div>
+          <div id="textSub">
+            <p class="heading">Best Solar maintenance in Pakistan</p>
+          </div>
+        </div>
+        </div>
+
+      <div class="carousel-item red white-text" id="secondSlide">
+        <div class="heading">Lorem ipsum dolor sit amet conse</div>
+        <div class="buttonWrapper">
+          <div class="lightButton">Solution</div>
+        </div>
+     </div>
+
+     <div class="carousel-item amber white-text" id="thirdSlide">
+       <div class="heading">Lorem ipsum dolor sit amet conse</div>
+       <div class="buttonWrapper">
+         <div class="lightButton">Solution</div>
+       </div>
+     </div>
+    </section>
+
+
 
   <section id="featureSection" class="sectionContainer">
-    <div class="container">
+    <div class="">
       <div id="title" class="row">
-        <div class="heading col s12 m10">Lorem ipsum dolor sit amet conse</div>
+        <div class="col s12 m10">
+          <div class="heading ">Lorem ipsum dolor sit amet conse</div>
+          <div class="subheading">lorem ipsum dolor</div>
+        </div>
         <div class="buttonWrapperLeft col s12 m2"><div class="darkButton">Solution</div></div>
       </div>
       <div class="row" id="cardContainer">
@@ -88,7 +105,7 @@
   <section id="testimonialSection" class="sectionContainer">
       <div class="container">
         <div class="bigLabel">What our client say.</div>
-        <app-testimonial></app-testimonial>
+        <app-testimonial id="carouselContainer"></app-testimonial>
       </div>
   </section>
 

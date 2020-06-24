@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
-declare let $: any;
+declare const M;
 
 @Component({
   selector: 'app-home',
@@ -8,9 +8,8 @@ declare let $: any;
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit, AfterViewInit {
-isScrolled = false;
 isDesktop = true;
-isVisible = true;
+isVisible = false;
 
 
   constructor(private elRef: ElementRef, private breakpointObserver: BreakpointObserver) {
@@ -31,7 +30,14 @@ isVisible = true;
   }
 
   ngAfterViewInit(): void {
-    window.addEventListener('scroll', this.onScroll);
+    let elem = document.querySelector('.carousel');
+    let instance = M.Carousel.init(elem, {indicators: true, fullWidth: true});
+
+    setInterval(function() {
+       instance.next();
+      }
+    , 3000);
+
     let elementsToShow = document.querySelectorAll('.down-on-scroll');
 
     this.isOnViewPortObserve();
@@ -39,30 +45,20 @@ isVisible = true;
 
 
   isOnViewPortObserve() {
+    const targets = document.querySelectorAll(".down-on-scroll");
     const callback = (entries) => {
       entries.forEach(entry => {
         entry.target.classList.toggle("is-visible");
       });
     };
-    const observer = new IntersectionObserver(callback, {threshold: 0.25});
-    const targets = document.querySelectorAll(".down-on-scroll");
+    const observer = new IntersectionObserver(callback, {threshold: 0.5});
 
-      targets.forEach(function(target) {
+
+      targets.forEach((target) => {
         observer.observe(target);
       });
 
   }
 
-
-
-  onScroll() {
-    let header = document.getElementById('navbar');
-    let position = header.offsetTop;
-      if (window.pageYOffset > position) {
-      this.isScrolled = true;
-    } else {
-      this.isScrolled = false;
-    }
-  }
 
 }

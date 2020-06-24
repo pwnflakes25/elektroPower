@@ -1,23 +1,14 @@
 
 /* general class below */
 .parentContainer {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  // scroll-snap-type: y mandatory;
+  // overflow-y: scroll;
   height: 100vh;
 }
 
-#navbar {
-  z-index: 1;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
 
 .sectionContainer {
-  scroll-snap-align: start;
+  // scroll-snap-align: start;
   min-height: calc(100vh + 2em);
   padding: 2rem;
   padding-top: 3rem;
@@ -32,7 +23,6 @@
   color: white;
   text-align: center;
   display: block;
-  margin-bottom: -5rem;
   text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -49,23 +39,26 @@
 }
 
 .lightButton {
-	border-radius:16px;
-	border:3px solid #ffffff;
+  border-radius: 2px;
+  max-width: 12rem;
+  text-align: center;
+  border:2px solid #ffffff;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
-	font-family: 'Roboto Condensed', sans-serif;
+	color: #ffffff;
+  font-family: 'Roboto Condensed', sans-serif;
 	font-size:17px;
-	padding:16px 31px;
+	padding: 10px 20px;
   letter-spacing: 2px;
   transition-property: background-color, color;
   transition: all .2s ease;
   -webkit-transition: all .2s ease;
 }
 .lightButton:hover {
-	background-color:white;
+  background-color: #ffffff;
   color: #232330;
 }
+
 .lightButton:active {
 	position:relative;
 	top:1px;
@@ -73,7 +66,7 @@
 
 
 .darkButton {
-	border-radius:16px;
+	border-radius: 2px;
   max-width: 12rem;
   text-align: center;
 	border:2px solid #232330;
@@ -82,7 +75,7 @@
 	color:#232330;
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size:17px;
-	padding:16px 31px;
+	padding: 10px 20px;
   letter-spacing: 2px;
   transition-property: background-color, color;
   transition: all .2s ease;
@@ -114,39 +107,69 @@
 
 
 /* first section =============================================================> */
+
 #firstSection {
-  background: linear-gradient(180deg, rgba(35, 35, 48, 0) 0%, rgba(35, 35, 48, 0.65) 24.54%), url('/assets/images/solarHouse.jpg');
-  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+#firstSlide {
+  background: linear-gradient(0deg, rgba(19, 19, 25, 0.65), rgba(19, 19, 25, 0.65)), url('/assets/images/solarHouse.jpg');
+  padding: 4rem;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#firstContainer {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
-#firstSection .heading {
-  color: white;
-  text-align: center;
+
+#firstSlide .textBox .bigHeading {
+  font-size: 36px;
+  text-align: left;
+  margin-bottom: 5px;
 }
+
+
+#firstSlide .textBox .heading {
+  color: white;
+  font-size: 24px;
+  text-align: left;
+}
+
+#secondSlide, #thirdSlide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 
 /* second section ================================================================>*/
 
+#featureSection.sectionContainer {
+  padding: 0px;
+}
 
 #featureSection {
-  padding: 4rem;
+  padding-top: 4rem;
 }
 
 #featureSection .heading {
   color: #232330;
   display: inline-block;
+  font-size: 36px;
+  font-weight: bold;
 }
+
+#featureSection .subheading {
+  color: #232330;
+  font-size: 24px;
+}
+
 
 #featureSection .darkButton {
   float: right;
@@ -155,23 +178,45 @@
 #featureSection .card {
   box-shadow: none;
   border-bottom-style: solid;
-  border-bottom-color: #232330;
+  border-bottom-color: #CF1C0D;
   border-bottom-width: 4px;
+  max-width: 20rem;
+}
+
+#title {
+  padding-left: 2rem;
+  background-color: #F0F0F4;
+  height: 170px;
+  padding-top: 2rem;
+}
+
+#featureSection i {
+  color: #CF1C0D;
+  align-self: center;
 }
 
 #cardContainer {
   margin-top: 8rem;
+  margin-left: 3rem;
 }
 
 
 /* call to action section =============================================================>*/
+#callToActionSection.sectionContainer {
+  min-height: 0px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #callToActionSection {
-  background: linear-gradient(118.86deg, #232A30 0%, #2A2330 83.48%);
+    background: linear-gradient(180.87deg, #232A30 1.43%, #453050 98.78%);
 }
 
 
 #callToActionSection .container {
- min-height: 100vh;
+  align-self: center;
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -199,6 +244,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 4rem;
+}
+
+
+#historySection .heading {
+  font-size: 36px;
 }
 
 
@@ -212,15 +263,15 @@
   height: 500px;
   margin-top: -3rem;
   margin-right: 2rem;
-  opacity: 1;
+  opacity: 0;
   transition: transform 4s .1s,
                opacity .3s .25s ease-out;
   will-change: transform, opacity;
 }
 
  #imageDisplay1.is-visible {
-  opacity: 0;
-  transform: translateY(-2rem);
+  opacity: 1;
+  transform: translateY(2rem);
 }
 
 
@@ -234,15 +285,15 @@
   height: 500px;
   margin-top: 10.25rem;
   margin-bottom: -8rem;
-  opacity: 1;
+  opacity: 0;
   transition: transform 5s .1s,
                opacity .3s .25s ease-out;
   will-change: transform, opacity;
 }
 
 #imageDisplay2.is-visible {
- opacity: 0;
- transform: translateY(3rem);
+ opacity: 1;
+ transform: translateY(-3rem);
 }
 
 
@@ -270,6 +321,7 @@
 
   #historySection .textContainer {
     min-height: 0px;
+    padding-left: 0px;
     max-height: 60vh;
     display: flex;
     flex-direction: column;
@@ -294,10 +346,20 @@
 
 /* testimonial section ========================================================> */
 
+#testimonialSection .sectionContainer {
+  min-height: 0px;
+  max-height: 65vh;
+}
+
+#testimonialSection .bigLabel {
+  margin-top: 4rem;
+  padding-left: 4rem;
+}
+
+
 #testimonialSection {
-  background-color: #F0F0F4;
-  display: flex;
-  flex-direction: column;
+  // background-color: #F0F0F4;
+  background: linear-gradient(180.87deg, #232A30 1.43%, #453050 98.78%);
 }
 
 // form section ================================================================>

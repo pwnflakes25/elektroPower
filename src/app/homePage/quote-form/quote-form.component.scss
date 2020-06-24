@@ -2,13 +2,19 @@
   padding: 4rem;
 }
 
+.bigLabel {
+  color: #A7A7BE;
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
 
 /* label focus color */
-.input-field input[type=email]:focus + label {
+.input-field input[type=email]:focus + label, .input-field input[type=text]:focus + label {
   color: #232330 !important;
 }
 /* label underline focus color */
-.input-field input[type=email]:focus {
+.input-field input[type=email]:focus, .input-field input[type=text]:focus {
   border-bottom: 1px solid #232330 !important;
   box-shadow: 0 1px 0 0 #000;
 }

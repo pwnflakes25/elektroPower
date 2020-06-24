@@ -1,6 +1,13 @@
 <div class="card">
   <div class="card-content">
+    <div class="bigLabel">Let Us Contact You!</div>
     <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="text" name="" value="" id="email" formControlName="name">
+          <label class="active" for="email">Your Name</label>
+        </div>
+     </div>
       <div class="row">
         <div class="input-field col s12">
           <input type="email" name="" value="" id="email" formControlName="email">
