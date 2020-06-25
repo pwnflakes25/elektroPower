@@ -32,11 +32,11 @@ isVisible = false;
   ngAfterViewInit(): void {
     let elem = document.querySelector('.carousel');
     let instance = M.Carousel.init(elem, {indicators: true, fullWidth: true});
-
-    setInterval(function() {
-       instance.next();
-      }
-    , 3000);
+    // 
+    // setInterval(function() {
+    //    instance.next();
+    //   }
+    // , 3000);
 
     let elementsToShow = document.querySelectorAll('.down-on-scroll');
 
@@ -46,11 +46,18 @@ isVisible = false;
 
   isOnViewPortObserve() {
     const targets = document.querySelectorAll(".down-on-scroll");
+
     const callback = (entries) => {
       entries.forEach(entry => {
-        entry.target.classList.toggle("is-visible");
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+        else {
+          entry.target.classList.remove('is-visible');
+        }
       });
     };
+
     const observer = new IntersectionObserver(callback, {threshold: 0.5});
 
 

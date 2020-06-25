@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {LayoutModule} from '@angular/cdk/layout';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,8 @@ import { FooterComponent } from './footer/footer.component';
 import { QuoteFormComponent } from './homePage/quote-form/quote-form.component';
 import { SolarComponent } from './packages/solar/solar.component';
 import { GeneratorComponent } from './packages/generator/generator.component';
+import {MailerService} from './packages/mailer.service';
+
 
 @NgModule({
   declarations: [
@@ -30,9 +33,10 @@ import { GeneratorComponent } from './packages/generator/generator.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MailerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

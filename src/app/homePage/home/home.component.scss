@@ -31,6 +31,10 @@
   height: auto;
 }
 
+.subheading {
+  font-size: 24px;
+}
+
 .bigLabel {
   text-align: center;
   color: #A7A7BE;
@@ -41,7 +45,6 @@
 .lightButton {
   border-radius: 2px;
   max-width: 12rem;
-  text-align: center;
   border:2px solid #ffffff;
 	display:inline-block;
 	cursor:pointer;
@@ -101,7 +104,6 @@
   width: 100%;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
   margin-top: 1rem;
 }
 
@@ -114,16 +116,20 @@
   min-height: 80vh;
 }
 
+#firstSection .buttonWrapper {
+  margin-top: 20px;
+}
+
 #firstSlide {
   background: linear-gradient(0deg, rgba(19, 19, 25, 0.65), rgba(19, 19, 25, 0.65)), url('/assets/images/solarHouse.jpg');
   padding: 4rem;
+  padding-top: 8rem;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 
@@ -138,6 +144,14 @@
   color: white;
   font-size: 24px;
   text-align: left;
+}
+
+#thirdSlide {
+  background-image: url('/assets/images/solarBlue.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #secondSlide, #thirdSlide {

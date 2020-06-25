@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators  } from '@angular/forms';
+import {MailerService} from '../../packages/mailer.service';
 
 @Component({
   selector: 'app-quote-form',
@@ -10,7 +11,7 @@ export class QuoteFormComponent implements OnInit {
 quoteForm: FormGroup;
 
 
-  constructor() { }
+  constructor(private mailerService: MailerService) { }
 
   ngOnInit(): void {
 
@@ -23,7 +24,7 @@ quoteForm: FormGroup;
   }
 
   onSubmit() {
-    console.log(this.quoteForm.value);
+    this.mailerService.sendMail(this.quoteForm.value);
   }
 
 }

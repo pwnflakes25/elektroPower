@@ -1,0 +1,42 @@
+.container {
+  margin-top: 5rem;
+}
+
+.titleBox {
+  padding-left: 2rem;
+  background-color: #F0F0F4;
+  height: 170px;
+  padding-top: 2rem;
+}
+
+.heading {
+  font-size: 36px;
+  height: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+.ribbon {
+  content: " ";
+  width: 4rem;
+  height: 4rem;
+  clip-path: polygon(57% 0, 100% 0%, 0 100%, 0 57%);
+}
+
+.bronze {
+  background-color: #cd7f32;
+}
+
+.silver {
+  background-color: #C0C0C0;
+}
+
+ .gold {
+  background-color: #D4AF37;
+}

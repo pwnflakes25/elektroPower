@@ -2,18 +2,31 @@
   margin-top: 5rem;
 }
 
+.titleBox {
+  padding-left: 2rem;
+  background-color: #F0F0F4;
+  height: 170px;
+  padding-top: 2rem;
+}
+
+.heading {
+  font-size: 36px;
+  height: auto;
+}
+
 .card {
   display: flex;
   flex-direction: column;
+  transition: 0.3s;
+  cursor: pointer;
 }
+
 
 .ribbon {
   content: " ";
   width: 4rem;
   height: 4rem;
-  text-align: center;
-  align-self: center;
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
+  clip-path: polygon(57% 0, 100% 0%, 0 100%, 0 57%);
 }
 
 .bronze {
