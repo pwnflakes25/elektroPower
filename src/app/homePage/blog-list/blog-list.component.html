@@ -1,0 +1,23 @@
+<div class="">
+  <!-- <div class="card horizontal" *ngFor="let post of blogs; let i = index; trackBy: trackByFn;">
+      <div class="card-image">
+        <img [src]="post.image" alt="">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <div class="">{{post.title}}</div>
+          <div class="subText">{{post.subText}}</div>
+        </div>
+      </div>
+  </div> -->
+
+  <div class="card horizontal hoverable" *ngFor="let post of blogs; let i = index; trackBy: trackByFn;">
+    <div class="row content">
+      <div class="cardImage col s3 valign-wrapper" [style.background-image]="'url('+post.image+')'"></div>
+      <div class="card-content col s9">
+        <div class="">{{post.title}}</div>
+        <div class="subText">{{post.subText}}</div>
+      </div>
+    </div>
+  </div>
+</div>

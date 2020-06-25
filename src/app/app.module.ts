@@ -15,6 +15,7 @@ import { QuoteFormComponent } from './homePage/quote-form/quote-form.component';
 import { SolarComponent } from './packages/solar/solar.component';
 import { GeneratorComponent } from './packages/generator/generator.component';
 import {MailerService} from './packages/mailer.service';
+import { BlogListComponent } from './homePage/blog-list/blog-list.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import {MailerService} from './packages/mailer.service';
     FooterComponent,
     QuoteFormComponent,
     SolarComponent,
-    GeneratorComponent
+    GeneratorComponent,
+    BlogListComponent
   ],
   imports: [
     BrowserModule,
