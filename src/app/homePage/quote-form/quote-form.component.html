@@ -20,6 +20,23 @@
          <label for="icon_telephone">Telephone</label>
       </div>
      </div>
+     <div class="row">
+       <div class="input-field col s12">
+         <select formControlName="package">
+           <optgroup label="Solar Service">
+             <option value="Solar Bronze">Bronze Package</option>
+             <option value="Solar Silver">Silver Package</option>
+             <option value="Solar Gold">Gold Package</option>
+           </optgroup>
+           <optgroup label="Generator Service">
+             <option value="Generator Bronze">Bronze Package</option>
+             <option value="Generator Silver">Silver Package</option>
+             <option value="Generator Gold">Gold Package</option>
+           </optgroup>
+         </select>
+         <label>Interested Package</label>
+       </div>
+     </div>
     <button type="submit" class="darkButton" [disabled]="!quoteForm.valid">Submit</button>
     </form>
   </div>
