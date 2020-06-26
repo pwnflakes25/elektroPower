@@ -9,7 +9,7 @@ export class MailerService {
   constructor(private http: HttpClient) {}
 
    sendMail(data: any) {
-     this.http.post("http://localhost:4200/sendmail", data).subscribe(
+     this.http.post("./sendmail", data).subscribe(
        res => {
          console.log(res)
        },

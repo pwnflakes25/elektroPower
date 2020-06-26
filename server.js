@@ -3,6 +3,7 @@ const cors = require("cors");
 const bodyParsers = require("body-parsers");
 const nodemailer = require("nodemailer");
 const app = express();
+const path = require('path');
 
 const sendMail = async (user, callback) => {
   let testAccount = await nodemailer.createTestAccount();
@@ -29,8 +30,22 @@ const sendMail = async (user, callback) => {
    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
 }
 
+const forceSSL = function() {
+  return function (req, res, next) {
+    if (req.headers['x-forwarded-proto'] !== 'https') {
+      return res.redirect(
+       ['https://', req.get('Host'), req.url].join('')
+      );
+    }
+    next();
+  }
+}
+
+
 app.use(cors({origin: "*"}));
 app.use(bodyParsers.json());
+app.use(forceSSL());
+
 
 
 // Start the app by listening on the default Heroku port
