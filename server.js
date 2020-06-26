@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const bodyParsers = require("body-parsers");
+const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const app = express();
 const path = require('path');
@@ -43,7 +43,7 @@ const forceSSL = function() {
 
 
 app.use(cors({origin: "*"}));
-app.use(bodyParsers.json());
+app.use(bodyParser.json());
 app.use(forceSSL());
 
 
