@@ -1,18 +1,21 @@
 <div class="parentContainer">
     <section class="carousel carousel-slider center sectionContainer" id="firstSection">
-
       <div class="carousel-item" id="firstSlide">
-        <div class="textBox">
-          <div id="textTitle">
-            <h2 class="white-text bigHeading">Own Your Electricity</h2><br>
-          </div>
-        </div>
-        <div class="buttonWrapperLeft">
-          <div class="lightButton">Solution</div>
+        <div class="carousel-fixed-item">
+          <a id="carousel-prev" class="btn waves-effect left" (click)=prevCarousel()> < </a>
+          <a id="carousel-next" class="btn waves-effect right" (click)=nextCarousel()> > </a>
+       </div>
+        <div class="heading">Own Your Electricity</div>
+        <div class="buttonWrapper">
+          <div class="lightButton">Solutions</div>
         </div>
         </div>
 
       <div class="carousel-item red white-text" id="secondSlide">
+        <div class="carousel-fixed-item">
+          <a id="carousel-prev" class="btn waves-effect left" (click)=prevCarousel()> < </a>
+          <a id="carousel-next" class="btn waves-effect right" (click)=nextCarousel()> > </a>
+       </div>
         <div class="heading">Expertise in Power Systems for over a decade</div>
         <div class="subheading">Est. 2008</div>
         <div class="buttonWrapper">
@@ -21,6 +24,10 @@
      </div>
 
      <div class="carousel-item amber white-text" id="thirdSlide">
+       <div class="carousel-fixed-item">
+         <a id="carousel-prev" class="btn waves-effect left" (click)=prevCarousel()> < </a>
+         <a id="carousel-next" class="btn waves-effect right" (click)=nextCarousel()> > </a>
+      </div>
        <div class="heading">How good is solar electricity in Pakistan?</div>
        <div class="buttonWrapper">
          <div class="lightButton">Read More</div>
@@ -37,7 +44,7 @@
           <div class="heading ">Switching to Solar has never been easier!</div>
           <div class="subheading">Check our affordable packages now</div>
         </div>
-        <div class="buttonWrapperLeft col s12 m2"><div class="darkButton">Solution</div></div>
+        <div class="buttonWrapperLeft col s12 m2"><div class="darkButton">Packages</div></div>
       </div>
       <div class="row" id="cardContainer">
         <div class="displayBox col s12 m4">
@@ -108,7 +115,7 @@
 
   <section id="testimonialSection" class="sectionContainer">
       <div class="container">
-        <div class="bigLabel">What our client say.</div>
+        <div class="bigLabel">What our clients say</div>
         <app-testimonial id="carouselContainer"></app-testimonial>
       </div>
   </section>
@@ -118,7 +125,10 @@
      <div class="col s12 m6">
         <app-quote-form></app-quote-form>
      </div>
-     <div class="col s12 m6">
+     <div class="col s12 m6 blogPostsContainer">
+      <div class="bigLabel left">
+        Blogs
+      </div>
       <app-blog-list></app-blog-list>
      </div>
    </div>

@@ -10,6 +10,7 @@ declare const M;
 export class HomeComponent implements OnInit, AfterViewInit {
 isDesktop = true;
 isVisible = false;
+instance: any;
 
 
   constructor(private elRef: ElementRef, private breakpointObserver: BreakpointObserver) {
@@ -31,16 +32,24 @@ isVisible = false;
 
   ngAfterViewInit(): void {
     let elem = document.querySelector('.carousel');
-    let instance = M.Carousel.init(elem, {indicators: true, fullWidth: true});
-    // 
-    // setInterval(function() {
-    //    instance.next();
-    //   }
-    // , 3000);
+    this.instance = M.Carousel.init(elem, {indicators: true, fullWidth: true});
+    //
+    setInterval(function() {
+       this.instance.next();
+      }
+    , 5000);
 
     let elementsToShow = document.querySelectorAll('.down-on-scroll');
 
     this.isOnViewPortObserve();
+  }
+
+  nextCarousel() {
+   this.instance.next();
+  }
+
+  prevCarousel() {
+    this.instance.prev();
   }
 
 
