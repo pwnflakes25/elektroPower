@@ -269,11 +269,17 @@
 }
 
 
-#callToActionSection .heading {
-  color: white;
+#callToActionSection .subheading {
+  color: #A7A7BE;
+  width: 35em;
   margin-bottom: 2rem;
-  text-align: center;
   align-self: center;
+  text-align: center;
+}
+
+#callToActionSection .subheading span {
+  color: white;
+  font-size: 28px;
 }
 
 /* history section =================================================================> */

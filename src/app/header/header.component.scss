@@ -5,6 +5,22 @@
   padding-right: 2rem;
 }
 
+// .brand-logo img {
+//   max-width: 10rem;
+//   max-height: 10rem;
+//   position: absolute;
+// }
+
+.logo-image {
+  width: 15rem;
+  height: 5rem;
+  margin-top: -8px;
+  background-image: url('/assets/images/logo.png');
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+
 .nav-wrapper .list{
   font-family: 'Roboto Condensed', sans-serif !important;
   font-size: 12px;
