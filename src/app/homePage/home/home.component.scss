@@ -9,7 +9,6 @@
 
 .sectionContainer {
   // scroll-snap-align: start;
-  min-height: calc(100vh + 2em);
   padding: 2rem;
   padding-top: 3rem;
 }
@@ -63,21 +62,18 @@
 }
 
 .heading {
-  font-size: 48px;
+  font-size: 36px;
   height: auto;
 }
-
 .subheading {
   font-size: 24px;
 }
-
 .bigLabel {
   text-align: center;
   color: #A7A7BE;
   font-size: 36px;
   margin-bottom: 2rem;
 }
-
 .lightButton {
   border-radius: 2px;
   max-width: 12rem;
@@ -93,18 +89,14 @@
   transition: all .2s ease;
   -webkit-transition: all .2s ease;
 }
-
 .lightButton:hover {
   background-color: #ffffff;
   color: #232330;
 }
-
 .lightButton:active {
 	position:relative;
 	top:1px;
 }
-
-
 .darkButton {
 	border-radius: 2px;
   max-width: 12rem;
@@ -129,7 +121,6 @@
 	position:relative;
 	top:1px;
 }
-
 .buttonWrapper {
   width: 100%;
   display: flex;
@@ -137,37 +128,30 @@
   justify-content: center;
   margin: 1rem;
 }
-
 .buttonWrapperLeft {
   width: 100%;
   display: flex;
   align-items: flex-start;
   margin-top: 1rem;
 }
-
-
-/* first section =============================================================> */
+/* first section ===================================> */
 
 #firstSection {
   display: flex;
   flex-direction: column;
   min-height: 80vh;
 }
-
 #firstSection .buttonWrapper {
   margin-top: 20px;
   z-index: 2;
 }
-
 #firstSlide {
   background: linear-gradient(0deg, rgba(28, 28, 28, 0.75), rgba(28, 28, 28, 0.75)) , url('/assets/images/solarHouse.jpg');
   padding: 4rem;
 }
-
 #firstSlide .heading {
   color: white;
 }
-
 #secondSlide{
   display: flex;
   flex-direction: column;
@@ -175,11 +159,9 @@
   background-color: #f0f0f4;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='117' height='117' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23cccccf' fill-opacity='0.09'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.09'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
 }
-
 #thirdSlide {
   background-image: url('/assets/images/solarBlue.jpg');
 }
-
 #firstSlide, #thirdSlide {
   display: flex;
   flex-direction: column;
@@ -189,7 +171,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 @media only screen and (max-width: 600px) {
   #firstSection {
     padding: 1rem;
@@ -199,35 +180,26 @@
   }
 }
 
-
-
-/* second section ================================================================>*/
-
+/* second section =====================================>*/
 #featureSection.sectionContainer {
   padding: 0px;
 }
-
 #featureSection {
   padding-top: 4rem;
 }
-
 #featureSection .heading {
   color: #232330;
   display: inline-block;
   font-size: 36px;
   font-weight: bold;
 }
-
 #featureSection .subheading {
   color: #232330;
   font-size: 24px;
 }
-
-
 #featureSection .darkButton {
   float: right;
 }
-
 #featureSection .card {
   box-shadow: none;
   border-bottom-style: solid;
@@ -235,33 +207,26 @@
   border-bottom-width: 4px;
   max-width: 20rem;
 }
-
 #title {
   padding-left: 2rem;
   background-color: #F0F0F4;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-
 #featureSection i {
   color: #CF1C0D;
   align-self: center;
 }
-
 #cardContainer {
   margin-top: 8rem;
   margin-left: 3rem;
 }
-
 @media only screen and (max-width: 600px) {
   #cardContainer {
     margin: 2rem;
   }
 }
-
-
-
-/* call to action section =============================================================>*/
+/* call to action section =============================>*/
 #callToActionSection.sectionContainer {
   min-height: 0px;
   height: 70vh;
@@ -269,44 +234,34 @@
   flex-direction: column;
   justify-content: center;
 }
-
 #callToActionSection {
     background: linear-gradient(180.87deg, #232A30 1.43%, #453050 98.78%);
 }
-
-
 #callToActionSection .container {
-  align-self: center;
+ align-self: center;
  display: flex;
  flex-direction: column;
- align-items: center;
  justify-content: center;
 }
-
-
 #callToActionSection .subheading {
   color: #A7A7BE;
   width: 35em;
   align-self: center;
   text-align: center;
 }
-
 #callToActionSection .normalText {
   color: #A7A7BE;
   font-size: 18px;
   margin: 1rem;
+  text-align: center;
 }
-
 @media only screen and (max-width: 600px) {
   #callToActionSection .subheading {
     font-size: 16px;
     width: auto;
   }
 }
-
-
-
-/* history section =================================================================> */
+/* history section =============================> */
 
 #historySection {
   display: flex;
@@ -323,13 +278,6 @@
   justify-content: center;
   padding-left: 4rem;
 }
-
-
-#historySection .heading {
-  font-size: 36px;
-}
-
-
 #imageDisplay1 {
   display: block;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/49/DLR_engineer_working_on_a_free-piston_linear_generator.jpg");
@@ -341,17 +289,13 @@
   margin-top: -5rem;
   margin-right: 2rem;
   opacity: 0;
-  transition: transform 4s .1s,
-               opacity .3s .25s ease-out;
+  transition: transform 4s .1s, opacity .3s .25s ease-out;
   will-change: transform, opacity;
 }
-
  #imageDisplay1.is-visible {
   opacity: 1;
   transform: translateY(2rem);
 }
-
-
 #imageDisplay2 {
   display: block;
   background-image: url("https://constructionreviewonline.com/wp-content/uploads/2020/03/6f171658877132d636341ae58e8b7d33.jpg");
@@ -366,13 +310,10 @@
                opacity .3s .25s ease-out;
   will-change: transform, opacity;
 }
-
 #imageDisplay2.is-visible {
  opacity: 1;
  transform: translateY(-5rem);
 }
-
-
 #imageDisplayMobile1 {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/49/DLR_engineer_working_on_a_free-piston_linear_generator.jpg");
   background-size: cover;
@@ -380,7 +321,6 @@
   background-repeat: no-repeat;
   height: 250px;
 }
-
 #imageDisplayMobile2 {
   background-image: url("https://constructionreviewonline.com/wp-content/uploads/2020/03/6f171658877132d636341ae58e8b7d33.jpg");
   background-size: cover;
@@ -395,15 +335,12 @@
     height: auto;
   }
 
-  #historySection .textContainer {
-    padding: 0;
-  }
-
   #historySection .darkButton {
     width: 100%;
   }
 
   #historySection .textContainer {
+    padding: 0;
     min-height: 0px;
     padding-left: 0px;
     max-height: 60vh;
@@ -423,11 +360,6 @@
 }
 
 /* testimonial section ========================================================> */
-
-#testimonialSection {
-  min-height: 0;
-}
-
 
 #testimonialSection .bigLabel {
   margin-top: 4rem;
@@ -458,10 +390,6 @@
 
 #quoteFormSection {
   background-color: #f0f0f4;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Ccircle stroke='%23232330' vector-effect='non-scaling-stroke' id='a' fill='none' stroke-width='5' r='315'/%3E%3Cuse id='f' href='%23a' stroke-dasharray='100 100 100 9999'/%3E%3Cuse id='b' href='%23a' stroke-dasharray='250 250 250 250 250 9999'/%3E%3Cuse id='e' href='%23a' stroke-dasharray='1000 500 1000 500 9999'/%3E%3Cuse id='g' href='%23a' stroke-dasharray='1500 9999'/%3E%3Cuse id='h' href='%23a' stroke-dasharray='2000 500 500 9999'/%3E%3Cuse id='j' href='%23a' stroke-dasharray='800 800 800 800 800 9999'/%3E%3Cuse id='k' href='%23a' stroke-dasharray='1200 1200 1200 1200 1200 9999'/%3E%3Cuse id='l' href='%23a' stroke-dasharray='1600 1600 1600 1600 1600 9999'/%3E%3C/defs%3E%3Cg transform='translate(1000 750)' stroke-opacity='0.04'%3E%3Cg transform='rotate(0 0 0)' %3E%3Ccircle fill='%23232330' fill-opacity='0.04' r='10'/%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23f' transform='scale(.1) rotate(50 0 0)' /%3E%3Cuse href='%23f' transform='scale(.2) rotate(100 0 0)' /%3E%3Cuse href='%23f' transform='scale(.3) rotate(150 0 0)' /%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23b' transform='scale(.4) rotate(200 0 0)' /%3E%3Cuse href='%23z' transform='scale(.5) rotate(250 0 0)' /%3E%3C/g%3E%3Cg id='z' transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23b'/%3E%3Cuse href='%23b' transform='scale(1.2) rotate(90 0 0)' /%3E%3Cuse href='%23b' transform='scale(1.4) rotate(60 0 0)' /%3E%3Cuse href='%23e' transform='scale(1.6) rotate(120 0 0)' /%3E%3Cuse href='%23e' transform='scale(1.8) rotate(30 0 0)' /%3E%3C/g%3E%3C/g%3E%3Cg id='y' transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23e' transform='scale(1.1) rotate(20 0 0)' /%3E%3Cuse href='%23g' transform='scale(1.3) rotate(-40 0 0)' /%3E%3Cuse href='%23g' transform='scale(1.5) rotate(60 0 0)' /%3E%3Cuse href='%23h' transform='scale(1.7) rotate(-80 0 0)' /%3E%3Cuse href='%23j' transform='scale(1.9) rotate(100 0 0)' /%3E%3C/g%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23h' transform='scale(2) rotate(60 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.1) rotate(120 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.3) rotate(180 0 0)'/%3E%3Cuse href='%23h' transform='scale(2.4) rotate(240 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.5) rotate(300 0 0)'/%3E%3C/g%3E%3Cuse href='%23y' transform='scale(2) rotate(180 0 0)' /%3E%3Cuse href='%23j' transform='scale(2.7)'/%3E%3Cuse href='%23j' transform='scale(2.8) rotate(45 0 0)'/%3E%3Cuse href='%23j' transform='scale(2.9) rotate(90 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.1) rotate(135 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.2) rotate(180 0 0)'/%3E%3C/g%3E%3Cuse href='%23k' transform='scale(3.3) rotate(225 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.5) rotate(270 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.6) rotate(315 0 0)'/%3E%3Cuse href='%23k' transform='scale(3.7)'/%3E%3Cuse href='%23k' transform='scale(3.9) rotate(75 0 0)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .blogPostsContainer {
@@ -475,7 +403,7 @@
   }
 }
 
-/* our partner section =========================================================>*/
+/* our partner section ============================>*/
 
 #partnerSection {
   background: linear-gradient(180deg, #F0F0F4 0%, #FFFFFF 47.83%);
@@ -486,7 +414,6 @@
 
 #partnerSection .partnerImages {
   height: 300px;
-  width: 100%;
   margin-bottom: 2rem;
   background-image: url('/assets/images/clients.png');
   background-position: center;
