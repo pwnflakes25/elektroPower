@@ -33,7 +33,7 @@ testimonials = [
 
   ngAfterViewInit(): void {
     let elems = document.querySelectorAll('.carousel');
-    let instances = M.Carousel.init(elems);
+    let instances = M.Carousel.init(elems, {padding: 5, shift: 10});
   }
 
 

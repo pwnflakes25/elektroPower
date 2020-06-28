@@ -13,8 +13,8 @@
 
   <div class="card horizontal hoverable" *ngFor="let post of blogs; let i = index; trackBy: trackByFn;">
     <div class="row content">
-      <div class="cardImage col s3 valign-wrapper" [style.background-image]="'url('+post.image+')'"></div>
-      <div class="card-content col s9">
+      <div class="cardImage col s6 m3 valign-wrapper" [style.background-image]="'url('+post.image+')'"></div>
+      <div class="card-content col s6 m9">
         <div class="">{{post.title}}</div>
         <div class="subText">{{post.subText}}</div>
       </div>
