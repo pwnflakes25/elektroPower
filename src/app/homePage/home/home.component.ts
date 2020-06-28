@@ -14,6 +14,7 @@ instance: any;
 
 
   constructor(private elRef: ElementRef, private breakpointObserver: BreakpointObserver) {
+    
       breakpointObserver.observe([
        Breakpoints.HandsetLandscape,
        Breakpoints.HandsetPortrait
@@ -34,10 +35,10 @@ instance: any;
     let elem = document.querySelector('.carousel');
     this.instance = M.Carousel.init(elem, {indicators: true, fullWidth: true});
     //
-    setInterval(function() {
+    setInterval(() => {
        this.instance.next();
       }
-    , 5000);
+    , 4000);
 
     let elementsToShow = document.querySelectorAll('.down-on-scroll');
 

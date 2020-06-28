@@ -1,8 +1,13 @@
 
 .nav-wrapper {
-  background: linear-gradient(118.86deg, #232A30 0%, #2A2330 83.48%);
+  // background: linear-gradient(118.86deg, #232A30 0%, #2A2330 83.48%);
+  background: white;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.blue-text li a {
+  color: #232330;
 }
 
 // .brand-logo img {
@@ -34,24 +39,16 @@
 .sidenav-trigger {
   cursor: pointer;
   width: 40px;
+  color: #232330;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .sidenav-trigger i {
   text-align: center;
 }
 
-#quoteButton {
-  border-radius: 8px;
-  border:3px solid #ffffff;
-  font-size: 12px;
-  color:#ffffff;
-  background-color: transparent;
-}
 
-#quoteButton:hover {
-  background-color: white;
-  color: #232330;
-}
 
 #service-dropdown {
   background-color: #232330;
