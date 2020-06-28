@@ -14,7 +14,7 @@ instance: any;
 
 
   constructor(private elRef: ElementRef, private breakpointObserver: BreakpointObserver) {
-    
+
       breakpointObserver.observe([
        Breakpoints.HandsetLandscape,
        Breakpoints.HandsetPortrait
@@ -28,7 +28,6 @@ instance: any;
    }
 
   ngOnInit(): void {
-
   }
 
   ngAfterViewInit(): void {

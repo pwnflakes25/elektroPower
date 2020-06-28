@@ -183,16 +183,18 @@
 // }
 
 #secondSlide{
-  background: linear-gradient(0deg, rgba(28, 28, 28, 0.75), rgba(28, 28, 28, 0.75)) ,url('/assets/images/office.jpg');
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f0f0f4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='117' height='117' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23cccccf' fill-opacity='0.09'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.09'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 #thirdSlide {
   background-image: url('/assets/images/solarBlue.jpg');
 }
 
-#firstSlide, #secondSlide, #thirdSlide {
+#firstSlide, #thirdSlide {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -377,7 +379,7 @@
   background-position: -15rem;
   width: 300px;
   height: 500px;
-  margin-top: 10.25rem;
+  margin-top: 10rem;
   opacity: 0;
   transition: transform 5s .1s,
                opacity .3s .25s ease-out;
@@ -386,7 +388,7 @@
 
 #imageDisplay2.is-visible {
  opacity: 1;
- transform: translateY(-4.5rem);
+ transform: translateY(-5rem);
 }
 
 
