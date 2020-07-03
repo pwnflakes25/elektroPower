@@ -14,9 +14,13 @@
   </div>
 
   <ul class="sidenav" id="sidenav">
-    <li><a >Home</a></li>
-    <li><a [routerLink]="['/solar']">Services</a></li>
-    <li><a href="collapsible.html">Blogs</a></li>
+    <li><a [routerLink]="['../']" class="sidenav-close">Home</a></li>
+    <li><a class="dropdown-trigger" data-target="sidedrop">Services</a></li>
+      <ul id='sidedrop' class='dropdown-content no-padding'>
+        <li><a [routerLink]="['/solar']" class="sidenav-close">Solar Service</a></li>
+        <li><a [routerLink]="['/generator']" class="sidenav-close">Generator Service</a></li>
+     </ul>
+    <li><a>Blogs</a></li>
   </ul>
 
   <ul id="service-dropdown" class="dropdown-content blue-text">

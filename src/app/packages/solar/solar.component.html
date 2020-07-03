@@ -3,7 +3,113 @@
     <div class="heading">Our Solar Service Packages</div>
   </div>
   <div class="container">
-    <div class="row">
+
+
+
+   <div class="selectionInput">
+     <div class="input-field">
+       <select [(ngModel)]="packageClass">
+         <option value="3kw" selected>3Kw</option>
+         <option value="5kw">5Kw</option>
+       </select>
+       <label>choose your option</label>
+     </div>
+   </div>
+
+
+
+    <div class="row" *ngIf="packageClass === '3kw'">
+
+      <div class="col s12 m4">
+        <div class="card hoverable">
+          <div class="ribbon bronze"></div>
+            <div class="card-content">
+              <span class="card-title">Basic Package</span>
+              <div class="features">
+                <ul>
+                  <li>8 x 400W</li>
+                  <li>3Kw Inverter (VM)</li>
+                  <li>Structure</li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <div class="benefits">
+                <ul>
+                  <li><i class="material-icons">done</i> Pro</li>
+                  <li><i class="material-icons">done</i> Pro</li>
+                  <li><i class="material-icons">clear</i>Cons</li>
+                  <li><i class="material-icons">clear</i>Const</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card-action">
+              <button type="button" class="btn" name="button">Git</button>
+            </div>
+          </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="card hoverable">
+          <div class="ribbon silver"></div>
+            <div class="card-content">
+              <span class="card-title">Standard Package</span>
+              <div class="features">
+                <ul>
+                  <li>8-10 x 400W</li>
+                  <li>VM II</li>
+                  <li>Structure</li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <div class="benefits">
+                <ul>
+                  <li><i class="material-icons">done</i> Pro</li>
+                  <li><i class="material-icons">done</i> Pro</li>
+                  <li><i class="material-icons">clear</i>Cons</li>
+                  <li><i class="material-icons">clear</i>Const</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card-action">
+              <button type="button" class="btn" name="button">Git</button>
+            </div>
+          </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="card hoverable">
+          <div class="ribbon gold"></div>
+            <div class="card-content">
+              <span class="card-title">Gold Package</span>
+              <div class="features">
+                <ul>
+                  <li>10 x 400W</li>
+                  <li>VM III</li>
+                  <li>Structure</li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <div class="benefits">
+                <ul>
+                  <li><i class="material-icons">done</i> Pro</li>
+                  <li><i class="material-icons">done</i> Pro</li>
+                  <li><i class="material-icons">clear</i>Cons</li>
+                  <li><i class="material-icons">clear</i>Const</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card-action">
+              <button type="button" class="btn" name="button">Git</button>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+    <div class="row" *ngIf="packageClass === '5kw'">
       <div class="col s12 m4">
         <div class="card hoverable">
           <div class="ribbon bronze"></div>
@@ -59,5 +165,24 @@
           </div>
       </div>
     </div>
+
+    <div class="additionalFeatures">
+      <ul>
+        <li><i class="material-icons">send</i> Complete installation, circuitry</li>
+        <li><i class="material-icons">send</i> Customizable packages on demand</li>
+        <li><i class="material-icons">send</i> 25 years warranty</li>
+        <li><i class="material-icons">send</i> 6 years warranty</li>
+      </ul>
+    </div>
+
+    <div class="calculatorReminder">
+      <div class="card-panel">
+        <div class="card-title" style="margin-bottom: 1rem;">Still not sure which power class to take? </div>
+         <div class="divider"></div>
+         <button type="button" class="btn" name="button">Calculate for me!</button>
+      </div>
+    </div>
+
   </div>
 </section>
+<app-footer></app-footer>

@@ -37,7 +37,7 @@ instance: any;
     setInterval(() => {
        this.instance.next();
       }
-    , 4000);
+    , 5000);
 
     let elementsToShow = document.querySelectorAll('.down-on-scroll');
 

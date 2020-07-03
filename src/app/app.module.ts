@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {LayoutModule} from '@angular/cdk/layout';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +16,7 @@ import { SolarComponent } from './packages/solar/solar.component';
 import { GeneratorComponent } from './packages/generator/generator.component';
 import {MailerService} from './packages/mailer.service';
 import { BlogListComponent } from './homePage/blog-list/blog-list.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { BlogListComponent } from './homePage/blog-list/blog-list.component';
     QuoteFormComponent,
     SolarComponent,
     GeneratorComponent,
-    BlogListComponent
+    BlogListComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { BlogListComponent } from './homePage/blog-list/blog-list.component';
     BrowserAnimationsModule,
     LayoutModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [MailerService],
   bootstrap: [AppComponent]

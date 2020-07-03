@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     const dropDown = document.querySelectorAll('.dropdown-trigger');
 
     const sideNavInstance = M.Sidenav.init(elems);
-    const dropDownInstance = M.Dropdown.init(dropDown);
+    const dropDownInstance = M.Dropdown.init(dropDown, {coverTrigger: false, constrainWidth: false});
 
 
   }
