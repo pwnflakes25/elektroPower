@@ -10,7 +10,8 @@ declare const M;
 export class HomeComponent implements OnInit, AfterViewInit {
 isDesktop = true;
 isVisible = false;
-instance: any;
+carouselInstance: any;
+actionButtonInstance: any;
 
 
   constructor(private elRef: ElementRef, private breakpointObserver: BreakpointObserver) {
@@ -31,11 +32,13 @@ instance: any;
   }
 
   ngAfterViewInit(): void {
-    let elem = document.querySelector('.carousel');
-    this.instance = M.Carousel.init(elem, {indicators: true, fullWidth: true});
+    let carouselElem = document.querySelector('.carousel');
+    let actionButtonElems = document.querySelectorAll('.fixed-action-btn');
+    this.carouselInstance = M.Carousel.init(carouselElem, {indicators: true, fullWidth: true});
+    this.actionButtonInstance = M.FloatingActionButton.init(actionButtonElems);
     //
     setInterval(() => {
-       this.instance.next();
+       this.carouselInstance.next();
       }
     , 5000);
 
@@ -45,11 +48,11 @@ instance: any;
   }
 
   nextCarousel() {
-   this.instance.next();
+   this.carouselInstance.next();
   }
 
   prevCarousel() {
-    this.instance.prev();
+    this.carouselInstance.prev();
   }
 
 
