@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import {LayoutModule} from '@angular/cdk/layout';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatSliderModule} from '@angular/material/slider';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +20,8 @@ import { GeneratorComponent } from './packages/generator/generator.component';
 import {MailerService} from './packages/mailer.service';
 import { BlogListComponent } from './homePage/blog-list/blog-list.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { RecommendationComponent } from './calculator/recommendation/recommendation.component';
+
 
 
 @NgModule({
@@ -30,7 +35,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
     SolarComponent,
     GeneratorComponent,
     BlogListComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    RecommendationComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +45,10 @@ import { CalculatorComponent } from './calculator/calculator.component';
     LayoutModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatSliderModule,
+    MatDialogModule,
+    MatTooltipModule
   ],
   providers: [MailerService],
   bootstrap: [AppComponent]

@@ -1,1 +1,18 @@
-<p>calculator works!</p>
+<section>
+  <div class="container">
+    <div class="card">
+      <div class="title">Net Load Calculator</div>
+      <div class="Description">
+        Tell us how many appliances that you have and we will estimate the amount of load of power for you
+      </div>
+      <form [formGroup]='calculatorForm'>
+        <div class="range-field" *ngFor="let appliance of appliances; let i = index;" >
+          <label for="">{{appliance}}</label>
+         <input type="range" [formControlName]="appliance" min="0" max="10" step="1" #slider/>
+         <p>{{slider.value}}</p>
+       </div>
+      </form>
+      <button type="button" name="button" (click)="onCalculate()" class="btn">Calculate</button>
+    </div>
+  </div>
+</section>

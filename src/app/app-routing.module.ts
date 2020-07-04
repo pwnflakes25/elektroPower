@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './homePage/home/home.component';
 import {SolarComponent} from './packages/solar/solar.component';
 import {GeneratorComponent} from './packages/generator/generator.component';
+import {CalculatorComponent} from './calculator/calculator.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'generator',
     component: GeneratorComponent
+  },
+  {
+    path: 'calculator',
+    component: CalculatorComponent
   }
 ];
 
