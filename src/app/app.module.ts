@@ -21,6 +21,7 @@ import {MailerService} from './packages/mailer.service';
 import { BlogListComponent } from './homePage/blog-list/blog-list.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { RecommendationComponent } from './calculator/recommendation/recommendation.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 
@@ -36,7 +37,8 @@ import { RecommendationComponent } from './calculator/recommendation/recommendat
     GeneratorComponent,
     BlogListComponent,
     CalculatorComponent,
-    RecommendationComponent
+    RecommendationComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

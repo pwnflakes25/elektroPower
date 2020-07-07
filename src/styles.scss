@@ -7,3 +7,56 @@ scroll-behavior: smooth;
 body {
   margin: 0; font-family: 'Lato', sans-serif;;
  }
+
+ .lightButton {
+   border-radius: 2px;
+   max-width: 12rem;
+   border:2px solid #ffffff;
+ 	display:inline-block;
+ 	cursor:pointer;
+ 	color: #ffffff;
+   font-family: 'Roboto Condensed', sans-serif;
+ 	font-size:17px;
+ 	padding: 10px 20px;
+   letter-spacing: 2px;
+   transition-property: background-color, color;
+   transition: all .2s ease;
+   -webkit-transition: all .2s ease;
+ }
+ .lightButton:hover {
+   background-color: #ffffff;
+   color: #232330;
+ }
+ .lightButton:active {
+ 	position:relative;
+ 	top:1px;
+ }
+ .darkButton {
+ 	border-radius: 2px;
+   max-width: 12rem;
+   text-align: center;
+ 	border:2px solid #232330;
+ 	display:inline-block;
+ 	cursor:pointer;
+ 	color:#232330;
+ 	font-family: 'Roboto Condensed', sans-serif;
+ 	font-size:17px;
+ 	padding: 10px 20px;
+   letter-spacing: 2px;
+   transition-property: background-color, color;
+   transition: all .2s ease;
+   -webkit-transition: all .2s ease;
+ }
+ .darkButton:hover {
+ 	background-color: #232330;
+   color: #ffffff;
+ }
+ .darkButton:active {
+ 	position:relative;
+ 	top:1px;
+ }
+
+ .titleBox {
+   padding: 3rem;
+   background-color: #F0F0F4;
+ }

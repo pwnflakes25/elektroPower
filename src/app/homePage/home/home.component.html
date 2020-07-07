@@ -16,7 +16,7 @@
        </div>
         <div class="heading">Own Your Electricity</div>
         <div class="buttonWrapper">
-          <div class="lightButton">Solutions</div>
+          <div class="lightButton" routerLink="/solar">Solutions</div>
         </div>
         </div>
 
@@ -53,7 +53,7 @@
           <div class="heading ">Switching to Solar has never been easier!</div>
           <div class="subheading">Check our affordable packages now</div>
         </div>
-        <div class="buttonWrapperLeft col s12 m2"><div class="darkButton">Packages</div></div>
+        <div class="buttonWrapperLeft col s12 m2"><div class="darkButton" [routerLink]="['/solar']">Packages</div></div>
       </div>
       <div class="row" id="cardContainer">
         <div class="displayBox col s12 m4">
@@ -98,7 +98,7 @@
            Click on the button below. Own your electricity.
          </div>
         <div class="buttonWrapper">
-          <div class="lightButton">Solutions</div>
+          <div class="lightButton" routerLink="/solar">Solutions</div>
         </div>
     </div>
   </section>
@@ -108,7 +108,7 @@
        <div class="row">
            <div class="textContainer col s12 m6">
              <div class="textBox">
-               <div class="heading">Power Systems experts for over a decade.</div>
+               <div class="heading">Power systems experts for over a decade.</div>
                <div class="normalText">
                  We’ve been around for a while. We have in-depth knowledge of the ins and outs of the industry,
                   along with a strong ambition to solve your electricity problems.
@@ -131,7 +131,7 @@
 
   <section id="testimonialSection" class="sectionContainer patternBackground">
       <div class="container">
-        <div class="bigLabel">What our clients say</div>
+        <div class="bigLabel">What Our Clients Say</div>
         <app-testimonial id="carouselContainer"></app-testimonial>
       </div>
   </section>

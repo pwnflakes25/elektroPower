@@ -51,6 +51,7 @@ appliances = [
     let instance = M.Range.init(elems);
   }
 
+  //I know this is a bad practice, gotta update it. client wants it done real quickly
   onCalculate() {
     let value = this.calculatorForm.value;
     let sum = value.tubeLights * 40 + value.energySavers * 25 + value.ledBulbs * 7 + value.tvs * 250 +
