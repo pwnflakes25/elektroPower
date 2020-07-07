@@ -4,7 +4,7 @@ import {MAT_DIALOG_DATA} from '@angular/material/dialog';
 @Component({
   selector: 'app-recommendation',
   templateUrl: './recommendation.component.html',
-  styleUrls: ['./recommendation.component.css']
+  styleUrls: ['./recommendation.component.scss']
 })
 export class RecommendationComponent implements OnInit {
 recommendedPackage: any = 'Basic 3kw Package';
