@@ -1,6 +1,7 @@
 <div class="card">
   <div class="card-content">
     <div class="bigLabel">Let Us Contact You!</div>
+    <div class="descriptionText">Fill out your details to book a free consultation</div>
     <form [formGroup]="quoteForm" (ngSubmit)="onSubmit()">
       <div class="row">
         <div class="input-field col s12">
@@ -39,5 +40,6 @@
      </div>
     <button type="submit" class="darkButton" [disabled]="!quoteForm.valid">Submit</button>
     </form>
+    <p>*You will be contacted on the next working day</p>
   </div>
 </div>

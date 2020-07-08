@@ -7,7 +7,7 @@ declare const M;
   styleUrls: ['./solar.component.scss']
 })
 export class SolarComponent implements OnInit, AfterViewInit {
-packageClass;
+selected = '3kw';
 
   constructor() { }
 
@@ -15,10 +15,6 @@ packageClass;
   }
 
   ngAfterViewInit(): void {
-    var elems = document.querySelectorAll('select');
-    this.packageClass = '3kw';
-    var instances = M.FormSelect.init(elems);
-
   }
 
 }

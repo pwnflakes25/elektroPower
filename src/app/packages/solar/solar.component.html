@@ -5,7 +5,8 @@
 
   <div class="calculatorStripBox row">
     <div class="col s6 m10">
-      Still unsure about which option to take?
+      <div style="font-size: 24px;">We will suggest the best package for you</div>
+      <div style="font-size: 16px;">Calculate your electricity load now</div>
     </div>
     <div class="col s6 m2">
       <a class="right lightButton" routerLink="/calculator">Calculate</a>
@@ -17,18 +18,20 @@
 
 
    <div class="selectionInput">
-     <div class="input-field">
-       <select [(ngModel)]="packageClass">
-         <option value="3kw" selected>3Kw</option>
-         <option value="5kw">5Kw</option>
-       </select>
-       <label>choose your option</label>
-     </div>
+     <mat-form-field appearance="standard">
+      <mat-label>Select your package class</mat-label>
+      <mat-select [(ngModel)]="selected">
+        <mat-option value="3kw">3Kw Hybrid</mat-option>
+        <mat-option value="5kw">5Kw Hybrid</mat-option>
+        <mat-option value="7kw">7Kw Hybrid</mat-option>
+        <mat-option value="10kw">10Kw Hybrid</mat-option>
+      </mat-select>
+     </mat-form-field>
    </div>
 
 
 
-    <div class="row" *ngIf="packageClass === '3kw'">
+    <div class="row" *ngIf="selected === '3kw'">
 
       <div class="col s12 m4">
         <div class="card hoverable">
@@ -119,7 +122,7 @@
 
     </div>
 
-    <div class="row" *ngIf="packageClass === '5kw'">
+    <div class="row" *ngIf="selected === '5kw'">
       <div class="col s12 m4">
         <div class="card hoverable">
           <div class="ribbon bronze"></div>

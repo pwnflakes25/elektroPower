@@ -1,7 +1,7 @@
 <div class="parentContainer">
 
   <div class="fixed-action-btn">
-    <a class="btn-floating btn-large red hoverable"
+    <a class="btn-floating btn-large red pulse hoverable"
      matTooltip="Estimate your load now!"
      [routerLink]="['/calculator']">
       <i class="large material-icons">calculate</i>
@@ -120,8 +120,8 @@
            </div>
            <div class="pictureDisplay col s12 m6">
              <div class="row" id="imageContainer">
-               <div [ngClass]="{'col s6 hoverable': true, 'down-on-scroll': isDesktop}" id="{{ isDesktop ? 'imageDisplay1': 'imageDisplayMobile1'}}"></div>
-               <div [ngClass]="{'col s6 hoverable': true, 'down-on-scroll': isDesktop}" id="{{ isDesktop ? 'imageDisplay2': 'imageDisplayMobile2'}}"></div>
+               <div [ngClass]="{'col s6 hoverable': true, 'down-on-scroll': isDesktop}" id="{{ isDesktop ? 'imageDisplay1': 'imageDisplayMobile1'}}"><p><span>Generators</span>Learn more about our decade strong generator services</p></div>
+               <div [ngClass]="{'col s6 hoverable': true, 'down-on-scroll': isDesktop}" id="{{ isDesktop ? 'imageDisplay2': 'imageDisplayMobile2'}}"><p><span>Solar</span> A shift to solar is the future. Take a step towards a sustainable, happier life.</p></div>
              </div>
            </div>
        </div>
