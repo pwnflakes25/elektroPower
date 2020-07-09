@@ -29,7 +29,9 @@
      </mat-form-field>
    </div>
 
-
+   <div class="packageLabel bigLabel">
+     {{selected}} Packages
+   </div>
 
     <div class="row" *ngIf="selected === '3kw'">
 
@@ -38,20 +40,21 @@
           <div class="ribbon bronze"></div>
             <div class="card-content">
               <span class="card-title">Basic Package</span>
+              <div class="price"><span>Rs.</span> 195,000</div>
               <div class="features">
                 <ul>
-                  <li>8 x 400W</li>
-                  <li>3Kw Inverter (VM)</li>
-                  <li>Structure</li>
+                  <li>6 x 325W MonoPerc Panels</li>
+                  <li>MaxPower 3kW VM Inverter</li>
+                  <li>2 x Osaka Battery 100 AmpH</li>
+                  <li>16 gauge Galvanized Steel Stands</li>
+                  <li>Control DB with AC/DC Breaker</li>
                 </ul>
               </div>
               <div class="divider"></div>
               <div class="benefits">
                 <ul>
-                  <li><i class="material-icons">done</i> Pro</li>
-                  <li><i class="material-icons">done</i> Pro</li>
-                  <li><i class="material-icons">clear</i>Cons</li>
-                  <li><i class="material-icons">clear</i>Const</li>
+                  <li><i class="material-icons">done</i>Cheapest Option</li>
+                  <li><i class="material-icons">clear</i> Low electricity production + backup</li>
                 </ul>
               </div>
             </div>
@@ -67,20 +70,21 @@
           <div class="ribbon silver"></div>
             <div class="card-content">
               <span class="card-title">Standard Package</span>
+              <div class="price"><span>Rs.</span> 240,000</div>
               <div class="features">
                 <ul>
-                  <li>8-10 x 400W</li>
-                  <li>VM II</li>
-                  <li>Structure</li>
+                  <li>8 x 400W MonoPerc Panels</li>
+                  <li>MaxPower 3kW VMII Inverter</li>
+                  <li>2 x Osaka Batteries 130 AmpH</li>
+                  <li>14 gauge Galvanized Steel Stands</li>
+                  <li>Control DB with AC/DC Breaker</li>
                 </ul>
               </div>
               <div class="divider"></div>
               <div class="benefits">
                 <ul>
-                  <li><i class="material-icons">done</i> Pro</li>
-                  <li><i class="material-icons">done</i> Pro</li>
-                  <li><i class="material-icons">clear</i>Cons</li>
-                  <li><i class="material-icons">clear</i>Const</li>
+                  <li><i class="material-icons">done</i>High electricity production + backup</li>
+                  <li><i class="material-icons">done</i>USB/LAN connectivity</li>
                 </ul>
               </div>
             </div>
@@ -96,20 +100,23 @@
           <div class="ribbon gold"></div>
             <div class="card-content">
               <span class="card-title">Gold Package</span>
+              <div class="price">
+                <span>Rs.</span> 310,000
+              </div>
               <div class="features">
                 <ul>
-                  <li>10 x 400W</li>
-                  <li>VM III</li>
-                  <li>Structure</li>
+                  <li>10 x 400kW MonoPerc Panels</li>
+                  <li>MaxPower VMIII Inverter</li>
+                  <li>2 x AGS Batteries 150 AmpH</li>
+                  <li>14 gauge Galvanized Steel Stands</li>
+                  <li>Control DB with AC/DC Breaker</li>
                 </ul>
               </div>
               <div class="divider"></div>
               <div class="benefits">
                 <ul>
-                  <li><i class="material-icons">done</i> Pro</li>
-                  <li><i class="material-icons">done</i> Pro</li>
-                  <li><i class="material-icons">clear</i>Cons</li>
-                  <li><i class="material-icons">clear</i>Const</li>
+                  <li><i class="material-icons">done</i>Highest power output + great backup (Provides cushion)</li>
+                  <li><i class="material-icons">done</i>WiFi Connectivity</li>
                 </ul>
               </div>
             </div>
@@ -127,12 +134,22 @@
         <div class="card hoverable">
           <div class="ribbon bronze"></div>
             <div class="card-content">
-              <span class="card-title">Bronze Package</span>
-              <div class="">
+              <span class="card-title">Basic Package</span>
+              <div class="price"><span>Rs.</span> 300,000</div>
+              <div class="features">
                 <ul>
-                  <li>Benefit one</li>
-                  <li>Benefit two</li>
-                  <li>benefit three</li>
+                  <li>10 x 325W MonoPerc Panels</li>
+                  <li>MaxPower 5kW VM Inverter</li>
+                  <li>4 x Osaka Battery 100 AmpH</li>
+                  <li>16 gauge Galvanized Steel Stands</li>
+                  <li>Control DB with AC/DC Breaker</li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <div class="benefits">
+                <ul>
+                  <li><i class="material-icons">done</i>Cheapest Option</li>
+                  <li><i class="material-icons">clear</i>Low electricity production + backup</li>
                 </ul>
               </div>
             </div>
@@ -141,16 +158,28 @@
             </div>
           </div>
       </div>
+
+
       <div class="col s12 m4">
         <div class="card hoverable">
           <div class="ribbon silver"></div>
             <div class="card-content">
-              <span class="card-title">Silver Package</span>
-              <div class="">
+              <span class="card-title">Standard Package</span>
+              <div class="price"><span>Rs.</span> 425,000</div>
+              <div class="features">
                 <ul>
-                  <li>Benefit one</li>
-                  <li>Benefit two</li>
-                  <li>benefit three</li>
+                  <li>10 x 400W MonoPerc Panels</li>
+                  <li>MaxPower 5kW VMII Inverter</li>
+                  <li>2 x Osaka Batteries 130 AmpH</li>
+                  <li>14 gauge Galvanized Steel Stands</li>
+                  <li>Control DB with AC/DC Breaker</li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <div class="benefits">
+                <ul>
+                  <li><i class="material-icons">done</i>High electricity production + backup</li>
+                  <li><i class="material-icons">done</i>USB/LAN connectivity</li>
                 </ul>
               </div>
             </div>
@@ -159,16 +188,28 @@
             </div>
           </div>
       </div>
+
+
       <div class="col s12 m4">
         <div class="card hoverable">
           <div class="ribbon gold"></div>
             <div class="card-content">
               <span class="card-title">Gold Package</span>
-              <div class="">
+              <div class="price"><span>Rs.</span> 510,000</div>
+              <div class="features">
                 <ul>
-                  <li>Benefit one</li>
-                  <li>Benefit two</li>
-                  <li>benefit three</li>
+                  <li>12 x 400kW MonoPerc Panels</li>
+                  <li>MaxPower VMIII Inverter</li>
+                  <li>4 x AGS Batteries 150 AmpH</li>
+                  <li>14 gauge Galvanized Steel Stands</li>
+                  <li>Control DB with AC/DC Breaker</li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <div class="benefits">
+                <ul>
+                  <li><i class="material-icons">done</i>Highest power output + great backup (Provides cushion)</li>
+                  <li><i class="material-icons">done</i>WiFi Connectivity</li>
                 </ul>
               </div>
             </div>
