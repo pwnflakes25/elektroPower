@@ -6,7 +6,13 @@
   padding-right: 4rem;
   font-size: 12px;
   bottom: 0px;
+
+  h6 {
+    margin-bottom: 1rem;
+  }
 }
+
+
 
 @media only screen and (max-width: 600px) {
   .footer {
@@ -19,7 +25,15 @@
   color: #847979;
 }
 
+
+.material-icons {
+  display:inline-flex;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
 .footer li {
   margin-bottom: 1rem;
   color: #8F8FF9;
+  cursor: pointer;
 }
