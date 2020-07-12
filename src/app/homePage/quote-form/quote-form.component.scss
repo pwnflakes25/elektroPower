@@ -1,5 +1,6 @@
 .card {
   padding: 4rem;
+  box-shadow: none;
 }
 
 .bigLabel {
@@ -46,14 +47,12 @@ select option {
   box-shadow: 0 1px 0 0 #000;
 }
 
-
-.darkButton {
-	border-radius:16px;
+.submitButton {
+	border-radius: 2px;
 	border:2px solid #232330;
 	display:inline-block;
 	cursor:pointer;
 	color:#232330;
-	font-family: 'Roboto Condensed', sans-serif;
 	font-size:17px;
 	padding:16px 31px;
   letter-spacing: 2px;
@@ -61,21 +60,24 @@ select option {
   transition: all .2s ease;
   -webkit-transition: all .2s ease;
 }
-.darkButton:hover:enabled {
+
+.submitButton:hover:enabled {
 	background-color: #232330;
   color: #ffffff;
 }
 
-.darkButton:disabled{
+.submitButton:disabled{
   border-color: grey;
   color: grey;
   cursor: default;
 }
 
-.darkButton:active:enabled {
+.submitButton:active:enabled {
 	position:relative;
 	top:1px;
 }
+
+
 
 @media only screen and (max-width: 600px) {
   .card {

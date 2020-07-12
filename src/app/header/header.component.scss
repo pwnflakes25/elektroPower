@@ -1,10 +1,17 @@
 
 .nav-wrapper {
-  // background: linear-gradient(118.86deg, #232A30 0%, #2A2330 83.48%);
-  background: white;
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+nav {
+  background-color: white;
+}
+
+nav ul li a{
+  font-family: 'Lato', sans-serif;
+}
+
 
 .blue-text li a {
   color: #232330;
