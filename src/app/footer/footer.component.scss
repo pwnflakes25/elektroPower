@@ -1,17 +1,35 @@
 .footer {
   background-color: #f0f0f4;
   color: #232330;
-  padding: 2rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
   font-size: 12px;
   bottom: 0px;
+  padding: 2rem;
 
   h6 {
     margin-bottom: 1rem;
   }
+
+  .contentBox {
+     margin: 0 auto;
+
+    div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
+  }
+
 }
 
+
+.logo-image {
+  width: 15rem;
+  height: 5rem;
+  background-image: url('/assets/images/logo.png');
+  background-position: center;
+  background-size: cover;
+}
 
 
 @media only screen and (max-width: 600px) {
