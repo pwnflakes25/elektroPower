@@ -2,12 +2,15 @@
   <div class="carousel">
       <a class="carousel-item" *ngFor="let item of testimonials; let i = index; trackBy: trackByFn;">
         <div class="card">
-            <div class="personImage z-depth-4" [style.background-image]="'url('+item.imageUrl+')'">
-          </div>
-         <div class="card-content">
-            <i class="large material-icons">format_quote</i>
-           <p>{{item.message}}</p>
-           <p id="personName">{{item.name}}</p>
+            <!-- <div class="personImage z-depth-4" [style.background-image]="'url('+item.imageUrl+')'">
+          </div> -->
+         <div class="card-content messagePart">
+              <i class="large material-icons">format_quote</i>
+              <p>{{item.message}}</p>
+         </div>
+         <div class="personInfoPart">
+            <p id="personName">{{item.name}}</p>
+            <p id="position">{{item.position}}</p>
          </div>
          </div>
       </a>

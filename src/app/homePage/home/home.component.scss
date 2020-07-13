@@ -140,12 +140,18 @@
   float: right;
 }
 #featureSection .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   box-shadow: none;
   border-bottom-style: solid;
   border-bottom-color: #CF1C0D;
   border-bottom-width: 4px;
   max-width: 20rem;
 }
+
+
 #title {
   padding-left: 2rem;
   background-color: #F0F0F4;
@@ -157,8 +163,8 @@
   align-self: center;
 }
 #cardContainer {
-  margin-top: 6rem;
-  margin-left: 6rem;
+  margin-top: 4rem;
+  margin-left: 8rem;
 }
 @media only screen and (max-width: 600px) {
   #cardContainer {
@@ -228,6 +234,7 @@
   color: white;
   position: absolute;
   margin-top: 80%;
+  cursor: pointer;
 
   span {
     font-size: 20px;
@@ -331,7 +338,8 @@
 /* testimonial section ========================================================> */
 
 #testimonialSection .bigLabel {
-  margin-top: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
   color: white;
 }
 

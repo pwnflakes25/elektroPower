@@ -58,7 +58,7 @@
       <div class="row" id="cardContainer">
         <div class="displayBox col s12 m4">
             <div class="card">
-              <i class="large material-icons">beach_access</i>
+                <i class="large material-icons">beach_access</i>
               <div class="card-content ">
                 <span class="card-title">All-Round Service</span>
                 <p>Complete installation and maintenance provided for by a reliable team</p>
@@ -120,8 +120,8 @@
            </div>
            <div class="pictureDisplay col s12 m6">
              <div class="row" id="imageContainer">
-               <div [ngClass]="{'col s6 hoverable': true, 'down-on-scroll': isDesktop}" id="{{ isDesktop ? 'imageDisplay1': 'imageDisplayMobile1'}}"><p><span>Generators</span>Learn more about our decade strong generator services</p></div>
-               <div [ngClass]="{'col s6 hoverable': true, 'down-on-scroll': isDesktop}" id="{{ isDesktop ? 'imageDisplay2': 'imageDisplayMobile2'}}"><p><span>Solar</span> A shift to solar is the future. Take a step towards a sustainable, happier life.</p></div>
+               <div [ngClass]="{'col s6 hoverable': true, 'down-on-scroll': isDesktop}" id="{{ isDesktop ? 'imageDisplay1': 'imageDisplayMobile1'}}"><p routerLink="/about"><span>Generators</span>Learn more about our decade strong generator services</p></div>
+               <div [ngClass]="{'col s6 hoverable': true, 'down-on-scroll': isDesktop}" id="{{ isDesktop ? 'imageDisplay2': 'imageDisplayMobile2'}}"><p routerLink="/solar"><span>Solar</span> A shift to solar is the future. Take a step towards a sustainable, happier life.</p></div>
              </div>
            </div>
        </div>

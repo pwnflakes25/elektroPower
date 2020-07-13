@@ -2,10 +2,6 @@
   margin-top: 5rem;
 }
 
-.btn {
-  background-color: #232330;
-}
-
 .price {
   color: #232330;
   font-size: 24px;
@@ -68,6 +64,7 @@ mat-form-field {
   display:inline-flex;
   vertical-align: middle;
   margin-right: 1rem;
+  font-size: 12px;
 }
 
 .ribbon {
@@ -93,8 +90,7 @@ mat-form-field {
   background-color: #F0F0F4;
   color: #232330;
   padding: 1rem;
-  font-size: 16px;
-  margin: 1rem;
+  font-size: 12px;
 }
 
 .additionalFeatures li {
@@ -110,9 +106,19 @@ mat-form-field {
 
 .calculatorReminder button {
   left: 0px;
-  width: 100%;
+  width: 80%;
+  background-color: white;
+  color: #232330;
 }
 
 .card-panel {
-  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: rgb(35,35,48);
+  background: linear-gradient(180deg, rgba(35,35,48,1) 0%, rgba(74,104,107,1) 100%);
+  color: white;
+  font-size: 18px;
 }

@@ -11,11 +11,33 @@
 .carousel .card {
   text-align: center;
   display: flex;
-  max-height: 15rem;
   flex-direction: column;
-  background-color: white;
-  color: #232330;
+
+
+  .messagePart {
+    background: rgb(35,35,48);
+    background: linear-gradient(180deg, rgba(35,35,48,1) 0%, rgba(85,100,117,1) 100%);
+    color: white;
+    clip-path: polygon(0 0, 100% 0%, 100% 82%, 0 100%);
+    min-height: 12rem;
+  }
+
+  .personInfoPart{
+    background-color: white;
+    line-height: 1;
+
+    #personName {
+      font-size: 16px;
+      margin: 0;
+      color: #232330;
+    }
+     #position {
+      color: #A7A7BE;
+    }
+  }
+  
 }
+
 
 .card i {
   color: #A7A7BE;
@@ -26,37 +48,34 @@
 }
 
 
-.personImage {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-  margin-top: -5rem;
-  text-align: center;
-  align-self: center;
-  background-size: cover;
-  background-position: center;
-}
+// .personImage {
+//   width: 8rem;
+//   height: 8rem;
+//   border-radius: 50%;
+//   margin-top: -5rem;
+//   text-align: center;
+//   align-self: center;
+//   background-size: cover;
+//   background-position: center;
+// }
 
 
 .card-content p {
   margin-top: 2rem;
 }
 
-.card #personName {
-  color: #A7A7BE;
-}
 
 @media only screen and (max-width: 600px) {
 
-
-  .personImage {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    margin-top: -4rem;
-    text-align: center;
-    align-self: center;
-  }
+  //
+  // .personImage {
+  //   width: 6rem;
+  //   height: 6rem;
+  //   border-radius: 50%;
+  //   margin-top: -4rem;
+  //   text-align: center;
+  //   align-self: center;
+  // }
   .carousel-item {
     width: 15rem;
   }
