@@ -1,0 +1,14 @@
+.carousel-item {
+  img {
+    filter: grayscale(100%);
+  }
+
+  .logoBox {
+    width: 12rem;
+    height: 10rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+  }
+}

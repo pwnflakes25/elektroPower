@@ -23,6 +23,7 @@ import { BlogListComponent } from './homePage/blog-list/blog-list.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { RecommendationComponent } from './calculator/recommendation/recommendation.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { SliderComponent } from './homePage/slider/slider.component';
 
 
 
@@ -39,7 +40,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     BlogListComponent,
     CalculatorComponent,
     RecommendationComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

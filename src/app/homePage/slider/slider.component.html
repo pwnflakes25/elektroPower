@@ -1,0 +1,6 @@
+<div class="carousel logoCarousel">
+  <div class="carousel-item" *ngFor="let logo of logos; let i = index;">
+   <!-- <img [src]="logo" alt=""> -->
+   <div class="logoBox" [style.background-image]="'url('+logo+')'"></div>
+  </div>
+</div>

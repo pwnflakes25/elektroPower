@@ -17,7 +17,7 @@
 
 .calculatorStripBox {
   background: rgb(35,35,48);
-  background: linear-gradient(90deg, rgba(35,35,48,1) 0%, rgba(63,63,133,1) 43%, rgba(98,144,153,1) 100%);
+  background: linear-gradient(180deg, rgba(35,35,48,1) 0%, rgba(74,104,107,1) 100%);
   padding: 2rem;
   color: #F0F0F4;
   font-size: 24px;
@@ -102,11 +102,13 @@ mat-form-field {
   align-items: center;
   align-content: center;
   justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .calculatorReminder button {
   left: 0px;
-  width: 80%;
+  width: 50%;
   background-color: white;
   color: #232330;
 }

@@ -57,9 +57,18 @@ body {
  }
 
  .titleBox {
-   padding: 3rem;
-   background: rgb(196,196,196);
-   background: linear-gradient(90deg, #f0f0f4 0%, rgba(255,255,255,1) 100%);
+     padding: 3rem;
+     display: flex;
+     justify-content: center;
+     padding-left: 2rem;
+     font-size: 36px;
+     background-color: #232330;
+     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23232330' width='11' height='11'/%3E%3Crect fill='%23242431' x='10' width='11' height='11'/%3E%3Crect fill='%23242532' y='10' width='11' height='11'/%3E%3Crect fill='%23252634' x='20' width='11' height='11'/%3E%3Crect fill='%23252735' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23262836' y='20' width='11' height='11'/%3E%3Crect fill='%23262a37' x='30' width='11' height='11'/%3E%3Crect fill='%23272b38' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23272c39' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23282d3b' y='30' width='11' height='11'/%3E%3Crect fill='%23282e3c' x='40' width='11' height='11'/%3E%3Crect fill='%23292f3d' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%2329303e' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%232a313f' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%232a3240' y='40' width='11' height='11'/%3E%3Crect fill='%232b3441' x='50' width='11' height='11'/%3E%3Crect fill='%232b3542' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%232c3644' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%232c3745' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%232d3846' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%232d3947' y='50' width='11' height='11'/%3E%3Crect fill='%232e3b48' x='60' width='11' height='11'/%3E%3Crect fill='%232e3c49' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%232f3d4a' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23303e4b' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23303f4c' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%2331404d' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%2331424e' x='70' width='11' height='11'/%3E%3Crect fill='%2332434f' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23324450' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23334551' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23344652' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23344753' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23354954' x='80' width='11' height='11'/%3E%3Crect fill='%23354a55' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23364b56' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23374c57' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23374d58' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23384f59' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%2339505a' x='90' width='11' height='11'/%3E%3Crect fill='%2339515b' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%233a525c' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%233b535d' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%233c555e' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%233c565f' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%233d5760' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%233e5860' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%233f5961' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23405b62' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23415c63' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23415d64' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23425e65' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23436065' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23446166' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23456267' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23466368' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23476469' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23486669' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%2349676a' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%234a686b' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+     background-attachment: fixed;
+     background-size: cover;
+     padding-top: 2rem;
+     padding-bottom: 2rem;
+     color: white;
  }
 
  .bigLabel {
@@ -74,4 +83,30 @@ body {
  }
  .subheading {
    font-size: 24px;
+ }
+
+ .comingSoon {
+   width: 100%;
+   margin-top: 4rem;
+   margin-bottom: 4rem;
+   height: 20rem;
+   background-image: url('https://wallpaperaccess.com/full/2040033.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   filter: grayscale(100%);
+
+   .text{
+     display: absolute;
+     background-color: black;
+     color: white;
+     font-size: 28px;
+     opacity: 0.8;
+     max-width: 80%;
+     padding: 8px;
+   }
+
  }
