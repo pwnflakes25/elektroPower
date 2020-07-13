@@ -1,18 +1,23 @@
 <section>
   <div class="container">
     <div class="card">
-      <div class="title">Net Load Calculator</div>
-      <div class="Description">
-        Tell us how many appliances that you have and we will estimate the amount of load of power for you
+      <div class="header center">
+        <div class="title">Net Load Calculator</div>
+        <div class="Description">
+          Tell us how many appliances that you have and we will estimate the amount of load of power for you
+        </div>
       </div>
-      <form [formGroup]='calculatorForm'>
+      <div class="inputContainer">
         <div class="range-field" *ngFor="let appliance of appliances; let i = index;" >
-          <label for="">{{appliance}}</label>
-         <input type="range" [formControlName]="appliance" min="0" max="10" step="1" #slider/>
+          <label for="">{{appliance.name}}</label>
+         <input type="range" (change)="appliance.quantity = slider.value; isTouched = true" [value]='appliance.quantity' min="0" max="15" step="1" #slider/>
          <p>{{slider.value}}</p>
        </div>
-      </form>
-      <button type="button" name="button" (click)="onCalculate()" class="btn">Calculate</button>
+      </div>
+      <div class="buttonWrapper center">
+        <a id="calculate" type="button" name="button" (click)="onCalculate()" class="darkFillButton">Calculate</a>
+        <a id="reset" type="button" name="button" (click)="onReset()" class="darkButton" *ngIf="isTouched">Reset</a>
+      </div>
     </div>
   </div>
 </section>

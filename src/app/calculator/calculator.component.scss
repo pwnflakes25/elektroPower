@@ -3,11 +3,71 @@
   margin: 2rem;
 }
 
+ .header {
+   color: #A7A7BE;
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+}
+
+//below changes the color of the slider button
+input[type=range]::-webkit-slider-thumb {
+  background-color: #232330;
+}
+input[type=range]::-moz-range-thumb {
+  background-color: #232330;
+}
+input[type=range]::-ms-thumb {
+  background-color: #232330;
+}
+
+//below changes the color of the thumb that pops out when sliding
+input[type=range]+.thumb{
+    background-color: #232330;
+}
+
 .card {
   padding: 2rem;
 }
 
-form {
+.buttonWrapper {
+  a {
+    margin: 1rem;
+  }
+}
+
+.darkFillButton {
+ border-radius: 2px;
+  max-width: 12rem;
+  text-align: center;
+ border:2px solid #232330;
+ display:inline-block;
+ background-color: #232330;
+ cursor:pointer;
+ color:#ffffff;
+ font-size:17px;
+ padding: 10px 20px;
+  letter-spacing: 2px;
+  transition-property: background-color, color;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+}
+
+.darkFillButton:hover {
+  filter: brightness(150%);
+}
+
+.darkFillButton:active {
+ position:relative;
+ top:1px;
+}
+
+.inputContainer {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
 }
