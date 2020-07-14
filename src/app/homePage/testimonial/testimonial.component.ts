@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
+import {testimonialArr} from './testimonialList';
 declare const M;
 
 @Component({
@@ -8,26 +9,7 @@ declare const M;
 })
 export class TestimonialComponent implements OnInit, AfterViewInit {
 
-testimonials = [
-  {
-    name: 'Mr Firghi',
-    message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    imageUrl: 'https://randomuser.me/api/portraits/men/47.jpg',
-    position: 'Business Analyst'
-  },
-  {
-    name: 'Mr Rabi',
-    message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    imageUrl: 'https://randomuser.me/api/portraits/men/39.jpg',
-    position: 'Product Manager'
-  },
-  {
-    name: 'Ms Celine',
-    message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    imageUrl: 'https://randomuser.me/api/portraits/men/47.jpg',
-    position: 'HR Manager'
-  }
-];
+testimonials = [...testimonialArr];
 
   constructor() { }
 

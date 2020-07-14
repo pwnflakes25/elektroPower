@@ -5,7 +5,7 @@
 }
 
 .carousel-item {
-  width: 20rem;
+  width: 24rem;
 }
 
 .carousel .card {
@@ -17,14 +17,20 @@
   .messagePart {
     background: rgb(35,35,48);
     background: linear-gradient(180deg, rgba(35,35,48,1) 0%, rgba(85,100,117,1) 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 90% 90%, 74% 100%, 74% 90%, 0 90%);
     color: white;
-    clip-path: polygon(0 0, 100% 0%, 100% 82%, 0 100%);
-    min-height: 12rem;
+    min-height: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .personInfoPart{
     background-color: white;
-    line-height: 1;
+    line-height: 0.5;
+    padding-top: 2px;
 
     #personName {
       font-size: 16px;
@@ -34,16 +40,20 @@
      #position {
       color: #A7A7BE;
     }
+    #company {
+      font-size: 12px;
+      color: #c4c4c4;
+    }
   }
-  
+
 }
 
 
 .card i {
   color: #A7A7BE;
   position: absolute;
-  opacity: 20%;
-  margin-top: -3rem;
+  opacity: 10%;
+  margin-top: -5rem;
   right: 0px;
 }
 
@@ -61,7 +71,7 @@
 
 
 .card-content p {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 
