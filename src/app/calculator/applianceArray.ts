@@ -6,11 +6,6 @@ export const appliancesList = [
    },
    {
      name: 'Energy Savers',
-     power: 40,
-     quantity: 0
-   },
-   {
-     name: 'Tube Lights',
      power: 25,
      quantity: 0
    },
@@ -26,82 +21,82 @@ export const appliancesList = [
    },
    {
      name: 'TVs',
-     power: 139,
-     quantity: 0
-   },
-   {
-     name: 'LED TVs',
-     power: 130,
-     quantity: 0
-   },
-   {
-     name: 'Washing Machines',
-     power: 500,
-     quantity: 0
-   },
-   {
-     name: 'Refrigerators',
      power: 250,
      quantity: 0
    },
    {
-     name: 'Computers',
-     power: 100,
-     quantity: 0
-   },
-   {
-     name: 'Water Pumps',
-     power: 300,
-     quantity: 0
-   },
-   {
-     name: 'irons',
-     power: 1000,
+     name: 'LED TVs',
+     power: 50,
      quantity: 0
    },
    {
      name: 'Washing Machines',
-     power: 500,
+     power: 800,
+     quantity: 0
+   },
+   {
+     name: 'Freezers',
+     power: 350,
+     quantity: 0
+   },
+   {
+     name: 'Refrigerators',
+     power: 350,
+     quantity: 0
+   },
+   {
+     name: 'Computers',
+     power: 250,
+     quantity: 0
+   },
+   {
+     name: 'Water Pumps',
+     power: 700,
+     quantity: 0
+   },
+   {
+     name: 'Irons',
+     power: 1000,
      quantity: 0
    },
    {
      name: 'Split AC 1 Ton',
-     power: 1090,
+     power: 1800,
      quantity: 0
    },
    {
      name: 'Split AC 1.5 Ton',
-     power: 1560,
+     power: 2400,
      quantity: 0
    },
    {
      name: 'Split AC 2 Ton',
-     power: 1930,
+     power: 3000,
      quantity: 0
    },
    {
      name: 'Split AC 3.5 Ton',
-     power: 3500,
+     power: 7500,
      quantity: 0
    },
    {
      name: 'Split AC 4 Ton',
-     power: 4000,
+     power: 8000,
      quantity: 0
    },
    {
      name: 'Inverter AC 1 Ton',
-     power: 726,
+     power: 1000,
      quantity: 0
    },
    {
      name: 'Inverter AC 1.5 Ton',
-     power: 1077,
+     power: 1500,
      quantity: 0
    },
    {
      name: 'Inverter AC 2 Ton',
-     power: 1344,
+     power: 2000,
      quantity: 0
    },
  ]

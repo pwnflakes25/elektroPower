@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
+import { ActivatedRoute, Router } from '@angular/router';
 declare const M;
 
 @Component({
@@ -11,10 +12,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
 isDesktop = true;
 isVisible = false;
 carouselInstance: any;
-actionButtonInstance: any;
+sectionId: string;
 
 
-  constructor(private elRef: ElementRef, private breakpointObserver: BreakpointObserver) {
+  constructor(private elRef: ElementRef, private breakpointObserver: BreakpointObserver, private route: ActivatedRoute) {
 
       breakpointObserver.observe([
        Breakpoints.HandsetLandscape,
@@ -29,13 +30,15 @@ actionButtonInstance: any;
    }
 
   ngOnInit(): void {
+    this.route.queryParams.subscribe(queryParams => {
+     this.sectionId = queryParams['section'];
+   });
   }
 
   ngAfterViewInit(): void {
     let carouselElem = document.querySelector('.carousel');
-    let actionButtonElems = document.querySelectorAll('.fixed-action-btn');
     this.carouselInstance = M.Carousel.init(carouselElem, {indicators: true, fullWidth: true});
-    this.actionButtonInstance = M.FloatingActionButton.init(actionButtonElems);
+
     //
     setInterval(() => {
        this.carouselInstance.next();
@@ -45,6 +48,8 @@ actionButtonInstance: any;
     let elementsToShow = document.querySelectorAll('.down-on-scroll');
 
     this.isOnViewPortObserve();
+    //below to scroll to a section;
+    this.scrollIntoElement();
   }
 
   nextCarousel() {
@@ -77,6 +82,15 @@ actionButtonInstance: any;
         observer.observe(target);
       });
 
+  }
+
+  scrollIntoElement() {
+    if (this.sectionId) {
+      let elem = document.getElementById(this.sectionId);
+      const yOffset = -80;
+      const y = elem.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({top: y, behavior: 'smooth'});
+    }
   }
 
 

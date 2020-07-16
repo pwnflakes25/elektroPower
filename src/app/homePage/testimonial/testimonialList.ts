@@ -1,7 +1,7 @@
 export const testimonialArr = [
     {
       name: ' Khawaja Zia Abbas',
-      message: '“We have been working with ElektroPower since it started, and have never had any complaint regarding their reliability and quality of services. Whenever you require power services, Mr. Kamran is a man that can be trusted.” ',
+      message:   'ElektroPower is a top-notch, professional company which cares about their clients and provides trustworthy services.' ,
       company: 'Bank Alfalah Limited (Karachi)',
       position: 'Head Corporate Liabilities'
     },
@@ -31,7 +31,7 @@ export const testimonialArr = [
     },
     {
       name: 'Tariq Aleem',
-      message: 'ElektroPower is a top-notch, professional company which cares about their clients and provides trustworthy services.',
+      message: 'We have been working with ElektroPower since it started, and have never had any complaint regarding their reliability and quality of services. Whenever you require power services, Mr. Kamran is a man that can be trusted. ',
       company: 'Tariq Aleem and Co (Chartered accountants)',
       position: 'Senior Partner'
     },

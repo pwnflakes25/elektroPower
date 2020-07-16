@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+  }
+
+  navigateToTestimonial() {
+   let currentRoute = this.router.url.split('?')[0];
+   if (currentRoute === '/home') {
+     let testimonialElem = document.querySelector('#testimonialSection');
+     testimonialElem.scrollIntoView(true);
+   } else {
+     this.router.navigate(['home'], { queryParams: {section: 'testimonialSection'}});
+   }
+
   }
 
 }
