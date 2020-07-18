@@ -8,18 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class BlogListComponent implements OnInit {
 blogs = [
   {
-    title: 'Solar Panel',
-    subText: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore',
+    title: 'Benefits of Solar Panels in Pakistan',
+    subText: 'Coming Soon',
     image: 'https://www.sciencealert.com/images/2019-06/processed/hmm-solar_1024.jpg'
   },
   {
-    title: 'How Solar can decrease your electric cost by 5%',
-    subText: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore',
+    title: 'How to Decide Which Solar Package to Choose?',
+    subText: 'Coming Soon',
     image: 'https://www.sciencealert.com/images/2019-06/processed/hmm-solar_1024.jpg'
   },
   {
-    title: '5 ways you can be more sustainable',
-    subText: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore',
+    title: 'How Do Solar Panels Work?',
+    subText: 'Coming Soon',
     image: 'https://www.sciencealert.com/images/2019-06/processed/hmm-solar_1024.jpg'
   }
 ]
