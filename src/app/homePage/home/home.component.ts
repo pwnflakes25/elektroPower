@@ -18,8 +18,8 @@ sectionId: string;
   constructor(private elRef: ElementRef, private breakpointObserver: BreakpointObserver, private route: ActivatedRoute) {
 
       breakpointObserver.observe([
-       Breakpoints.HandsetLandscape,
-       Breakpoints.HandsetPortrait
+       Breakpoints.TabletLandscape,
+       Breakpoints.TabletPortrait
       ]).subscribe(result => {
        if (result.matches) {
          this.isDesktop = false;
