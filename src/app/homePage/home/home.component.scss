@@ -166,8 +166,11 @@
   align-self: center;
 }
 #cardContainer {
-  margin-top: 4rem;
-  margin-left: 6rem;
+  margin: 4rem 0px 4rem 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 @media only screen and (max-width: 1024px) {
  #featureSection {
@@ -176,9 +179,10 @@
  }
 
   #cardContainer {
-    margin: 2rem;
+    margin: auto;
   }
 }
+
 /* call to action section =============================>*/
 #callToActionSection {
   min-height: 0px;
@@ -338,7 +342,8 @@
 
 @media only screen and (max-width: 600px) {
 
-  #historySection {
+  #historySection.sectionContainer {
+    height: auto;
     padding: 1rem 0px 1rem 0px;
   }
 
@@ -367,6 +372,7 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
+
   #historySection.sectionContainer {
     height: auto;
     padding-left: 1rem 8px 1rem 8px;
