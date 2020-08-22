@@ -13,6 +13,7 @@ isDesktop = true;
 isVisible = false;
 carouselInstance: any;
 sectionId: string;
+loadPartnerSection: boolean = false;
 
 
   constructor(private elRef: ElementRef, private breakpointObserver: BreakpointObserver, private route: ActivatedRoute) {
@@ -48,6 +49,7 @@ sectionId: string;
     let elementsToShow = document.querySelectorAll('.down-on-scroll');
 
     this.isOnViewPortObserve();
+    this.isPartnerOnViewPort();
     //below to scroll to a section;
     this.scrollIntoElement();
   }
@@ -82,6 +84,25 @@ sectionId: string;
         observer.observe(target);
       });
 
+  }
+
+  isPartnerOnViewPort() {
+    const targets = document.querySelectorAll("#quoteFormSection");
+
+    const callback = (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.loadPartnerSection = true;
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, {threshold: 0.25});
+
+
+      targets.forEach((target) => {
+        observer.observe(target);
+      });
   }
 
   scrollIntoElement() {

@@ -7,6 +7,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
+import { LazyLoadImageModule } from 'ng-lazyload-image'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -54,7 +55,8 @@ import { SliderComponent } from './homePage/slider/slider.component';
     MatSliderModule,
     MatDialogModule,
     MatTooltipModule,
-    MatSelectModule
+    MatSelectModule,
+    LazyLoadImageModule
   ],
   providers: [MailerService],
   bootstrap: [AppComponent]
