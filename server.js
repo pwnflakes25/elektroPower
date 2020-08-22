@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const compression = require('compression');
 const app = express();
 const path = require('path');
 
@@ -44,6 +45,7 @@ const sendMail = async (user, callback) => {
 
 app.use(cors({origin: "*"}));
 app.use(bodyParser.json());
+app.use(compression());
 // app.use(forceSSL());
 
 
