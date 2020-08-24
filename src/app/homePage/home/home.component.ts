@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 import { ActivatedRoute, Router } from '@angular/router';
 declare const M;
@@ -16,7 +16,7 @@ sectionId: string;
 loadPartnerSection: boolean = false;
 
 
-  constructor(private elRef: ElementRef, private breakpointObserver: BreakpointObserver, private route: ActivatedRoute) {
+  constructor(private breakpointObserver: BreakpointObserver, private route: ActivatedRoute) {
 
       breakpointObserver.observe([
        Breakpoints.WebLandscape,
