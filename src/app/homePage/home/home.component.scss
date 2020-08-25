@@ -190,6 +190,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  content-visibility: auto;
 }
 
 #callToActionSection .container {
@@ -229,6 +230,7 @@
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F0F4 100%);
   padding-top: 0px;
   padding-bottom: 0px;
+  content-visibility: auto;
 }
 
 #historySection .textContainer {
@@ -390,6 +392,7 @@
   margin-top: 2rem;
   margin-bottom: 0rem;
   color: white;
+  content-visibility: auto;
 }
 
 
@@ -434,6 +437,7 @@
 #partnerSection {
   background: linear-gradient(180deg, #F0F0F4 0%, #FFFFFF 47.83%);
   padding: 0px;
+  content-visibility: auto;
 }
 
 
