@@ -1,5 +1,10 @@
+section {
+  overflow-x: hidden;
+}
+
 .container {
   margin-top: 5rem;
+  position: static;
 }
 
 .price {
@@ -52,8 +57,8 @@
   justify-content: center;
   align-items: center;
   font-size: 12;
-  top: 60%;
-  right: 0%;
+  top: 30rem;
+  right: 2px;
   width: 30rem;
   height: 3rem;
   background: #ED213A;  /* fallback for old browsers */
@@ -63,7 +68,12 @@
 
 @media only screen and (max-width: 780px) {
   #floating_ribbon {
-    top: 68%;
+    position: relative;
+    width: 25rem;
+    font-size: 12px;
+    top: -5px;
+    margin-right: -5rem;
+    margin-bottom: 2rem;
   }
 }
 
